@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+      <table class="table">
+          <thead>
+                <tr style="text-align: center;">
+                    <th (click)="sort('status')" style="font-weight: bold;" ><span i18n>{{ 'date' | translate }}</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='status'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th> 
+                    <th (click)="sort('time')" style="font-weight: bold;" ><span i18n>{{ 'Reporter' | translate }}</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='time'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('time')" style="font-weight: bold;" ><span i18n>{{ 'Order_ID' | translate }} </span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='time'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('total')" style="font-weight: bold;" ><span i18n>{{ 'Status' | translate }}</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='total'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('total')" style="font-weight: bold;" ><span i18n>{{ 'Manage' | translate }}</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='total'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let crew of breakIssueList | orderBy: key : !reverse ; let i = index" [ngClass]="{'closed' : crew.status=='closed' }">
+                <td style="text-transform: lowercase; width: 16%;">{{crew.reportedDate | date:'hh:mma MM/dd/yy'}}</td>
+                <td style="width: 16%;"> <span *ngIf="crew.reporter">{{crew.reporter.name}}</span></td>
+                <td style="width: 16%;"> <div *ngIf="crew.orderId">{{crew.orderId.orderId}}</div></td>
+                <td style="text-transform: capitalize;width: 16%;">{{crew.status}} : {{crew.actions}}</td>
+                <td style="text-align: center;width: 16%;">
+                    <i class="fa fa-eye" i18n-title title="{{ 'Manage_Issue' | translate }}" style="font-size:25px;cursor: pointer;" (click)="addButton(crew)"></i>    
+                </td>
+              </tr>
+          </tbody>
+      </table>
+      <div style="margin-left:35%;" *ngIf="breakIssueList.length!=0">
+          <ngx-paginate [page]="page" [options]="defaults" (pageChange)='setPage($event)'></ngx-paginate>
+      </div>
+      <div style="margin-left:40%;"  *ngIf="breakIssueList.length==0"  i18n>
+        {{ 'No_records_found' | translate }}
+      </div>
+  </div>
+</div>

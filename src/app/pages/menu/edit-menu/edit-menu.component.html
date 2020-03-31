@@ -1,0 +1,426 @@
+<nb-card>
+    <nb-card-header>
+      <a style="cursor: pointer;" (click)="previousPage()"i18n>Manage Menu</a> <span i18n>/ Manage Item</span>
+        <div class="edit-menu-switch" style="text-align: right;margin-right: 10%;">
+         <ui-switch checkedLabel="Inactive" style="margin-left: 32px;" [(ngModel)]="renderValue" [beforeChange]="OnBeforeChange" size="small" uncheckedLabel="Active" (change)="onChange($event)" ></ui-switch>
+        </div>
+    </nb-card-header>
+  
+    <nb-card-body>
+      <mat-tab-group *ngIf="menuDetails" #tabGroup [(selectedIndex)]="tabSelct">
+        
+        <mat-tab label="Menu">
+          <div class="profile-user-info">
+              <br>
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Item Name</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value">
+                      <input type="text" i18n-placeholder placeholder="Name" class="form-control" id="usr" [(ngModel)]="menuDetails.name">
+                  </div>
+              </div>
+  
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Description</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value">
+                      <input type="text" i18n-placeholder placeholder="Description" class="form-control" id="usr2" [(ngModel)]="menuDetails.description">
+                  </div>
+              </div>
+  
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Price</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value" style="padding: 20px 0px 0px 6px;">
+                      <span> 
+                          <input (keypress)="numberOnly2($event)"  type="number" i18n-placeholder placeholder="Price" class="form-control" id="stuff" [(ngModel)]="menuDetails.price">
+                          <label for="stuff" class=" input-icon">{{currency}}</label>
+                      </span>
+                  </div>
+              </div>
+  
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Preparation Time</span><span style="color: red;font-size: 18px;">*</span>: (Minutes)</div>
+                  <div class="profile-info-value">
+                      <span> 
+              <input (keypress)="numberOnly($event)" type="number" i18n-placeholder placeholder="Preparation Time" class="form-control" id="stuff" [(ngModel)]="menuDetails.preparationTime">
+          </span>
+                  </div>
+              </div>
+  
+          </div>
+          <div class="col-md-10 offset-md-1 " style="bottom: 1%;">
+              <div class="row align-items-center justify-content-center mt-4">
+                  <button type="button" class="btn btn-success" (click)="savedetails()" i18n>Next</button>
+                  &nbsp;&nbsp;
+                  <button type="button" class="btn btn-success" (click)="canceldetails()" style="background-color: #787e79;border-color: #787e79;" i18n>Cancel</button>
+              </div>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="Media" [disabled]='disabletab'>
+          <div class="profile-user-info">
+              <br>
+              <div class="profile-info-row">
+                  <div class="profile-info-name" i18n>Background color: </div>
+                  <div class="profile-info-value profilewidth">
+                      <span> 
+                          <input [value]="menuDetails.mediaId.bgColor" [(colorPicker)]="menuDetails.mediaId.bgColor" [style.background]="menuDetails.mediaId.bgColor"/>
+                      </span>
+                  </div>
+                  <div class="profile-info-name">
+                  </div>
+                  
+              </div>
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Menu Item Image</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value profilewidth">
+                      <div style="display:inline-block;position: relative; top: 22px;">
+                          <div class="box">
+                              <input type="file" #myInput name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple (change)="fileChangeEvent($event,content);changeAspectRatio(1)" />
+                              <label for="file-1" style="font-size: 13px;width: 200px;color:white;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                      <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                                  </svg>
+                                  <span *ngIf="!selectedFiles2" ><span i18n>Choose a file</span>&hellip;</span> <span *ngIf="selectedFiles2">{{selectedFiles2}}&hellip;</span>
+                              </label>
+                          </div>
+                          <ng-template #content let-modal>
+                              <div class="modal-header" style="background:transparent;border:none;">
+                                  <button type="button" style="background:#00b887;border:none;position: absolute;top: 0px; right: 0px;color:white;" class="btn btn-outline-dark" (click)="modal.close('upload click')" i18n>Save</button>
+                                  <button type="button"  class="close close-model" aria-label="Close" (click)="modal.dismiss('Cross click')" i18n>
+                                      Cancel
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <image-cropper *ngIf="selectedFiles2" style="width:100%;display: initial !important;" [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="selectedRatio" [resizeToWidth]="300" format="png" (imageCropped)="imageCropped($event)" (loadImageFailed)="loadImageFailed()"></image-cropper>
+                                      </div>
+                                  </form>
+                              </div>
+                          </ng-template>
+                      </div>
+                      <div style="display:inline-block;">
+                          <img class="editable img-responsive" style="height: 100px;" *ngIf="menuDetails.mediaId && menuDetails.mediaId.square && menuDetails.mediaId.square.url" alt=" Avatar" id="avatar2" src="{{menuDetails.mediaId.square.url}}">
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="profile-info-row">
+                  <div class="profile-info-name"><span i18n>Featured Image</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value profilewidth">
+                      <div style="display:inline-block;position: relative;top: 22px;">
+                          <div class="box">
+                              <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-1" (change)="fileChangeEvent2($event,content2);changeAspectRatio2(2)" />
+                              <label for="file-2" style="font-size: 13px;width: 200px;color:white;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                      <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                                  </svg>
+                                  <span *ngIf="!selectedFiles3"><span i18n>Choose a file</span>&hellip;</span> <span *ngIf="selectedFiles3">{{selectedFiles3}}&hellip;</span>
+                              </label>
+                          </div>
+                          <ng-template #content2 let-modal>
+                              <div class="modal-header" style="background:transparent;border:none;">
+                                  <button type="button" style="background:#00b887;border:none;position: absolute;top: 0px;right: 0px;color:white;" class="btn btn-outline-dark" (click)="modal.close('upload click')" i18n>Save</button>
+                                  <button type="button"  class="close close-model" aria-label="Close" (click)="modal.dismiss('Cross click')" i18n>
+                                      Cancel
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <image-cropper *ngIf="selectedFiles3" style="width:80%;border-style: groove;" [imageChangedEvent]="imageChangedEvent2" [maintainAspectRatio]="true" [aspectRatio]="selectedRatio2" [resizeToWidth]="300" format="png" (imageCropped)="imageCropped2($event)" (loadImageFailed)="loadImageFailed()"></image-cropper>
+                                      </div>
+                                  </form>
+                              </div>
+                          </ng-template>
+                      </div>
+                      <div style="display:inline-block">
+                          <img class="editable img-responsive" style="height: 100px;" *ngIf="menuDetails.mediaId && menuDetails.mediaId.rectangle && menuDetails.mediaId.rectangle.url" alt=" Avatar" id="avatar2" src="{{menuDetails.mediaId.rectangle.url}}">
+                      </div>
+                  </div>
+              </div>
+  
+          </div>
+          <div class="col-md-8 offset-md-1 " style="bottom: 1%;">
+              <div class="row align-items-center justify-content-center mt-4">
+                  <button type="button" class="btn btn-success" (click)="SaveBackgroundColor()" i18n>Next</button>
+              </div>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="Manage Section" [disabled]='disabletab'>
+          <div class="profile-user-info">
+              <br>
+              <div class="profile-info-row">
+                  <div class="profile-info-name" style="vertical-align: top;padding-top: 15px;"><span i18n>Menu Section</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                  <div class="profile-info-value" style="height: 200px;">
+                      <span> 
+                           <angular2-multiselect class="menutag-select-box"
+                              
+                              [data]="dropdownList2"
+                              [(ngModel)]="menuDetails.vendorSectionId"
+                              [settings]="dropdownSettings2"
+                              (onSelect)="onItemSelect($event)"
+                              (onSelectAll)="onSelectAll($event)">
+                            </angular2-multiselect >
+                      </span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-10 offset-md-1 " style="bottom: 1%;">
+              <div class="row align-items-center justify-content-center mt-4">
+                  <button type="button" class="btn btn-success" (click)="savesection()" i18n>Next</button>
+              </div>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="Available Hours" [disabled]='disabletab'>
+          <div class="form-group row" style="margin: 6px 0px 0px 33px;">
+              <label class="col-md-6">
+                  <mat-checkbox (click)="vendorAvailableHours()"  [(ngModel)]="vendorHours" i18n>
+                    Populate vendor available hours as Menu item available hours
+                  </mat-checkbox>
+              </label>
+              <label class="col-md-6" style="text-align: right;right: 3%;" i18n>
+                Times are displayed in Detroit Time Zone.
+            </label>
+          </div>
+          <form *ngIf="consignmentForm" [formGroup]="consignmentForm" >
+              <input type="hidden" formControlName="id">
+  
+              <div class="card card-outline-secondary col-md-12">
+                  <div class="card-block">
+                      <nb-accordion multi>
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Monday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItem()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="mondayItems" *ngFor="let item of consignmentForm.get('mondayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItem(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('mondayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+  
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Tuesday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItem2()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="tuesdayItems" *ngFor="let item of consignmentForm.get('tuesdayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItem2(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('tuesdayItems').controls.length <= 1">
+                                                  <i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+  
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Wednesday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItemwednesday()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="wednesdayItems" *ngFor="let item of consignmentForm.get('wednesdayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItemwednesday(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('wednesdayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Thursday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItemthursday()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="thursdayItems" *ngFor="let item of consignmentForm.get('thursdayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItemthursday(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('thursdayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Friday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItemfriday()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="fridayItems" *ngFor="let item of consignmentForm.get('fridayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItemfriday(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('fridayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Saturday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItemsaturday()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="saturdayItems" *ngFor="let item of consignmentForm.get('saturdayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItemsaturday(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('saturdayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+                          <nb-accordion-item>
+                              <nb-accordion-item-header i18n>
+                                  Sunday
+                              </nb-accordion-item-header>
+                              <nb-accordion-item-body>
+                                  <div class="form-group row">
+                                      <label class="col-md-7"></label>
+                                      <span class="col-md-2"><button (click)="addItemsunday()" style="cursor: default" type="button" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button></span>
+                                  </div>
+                                  <div formArrayName="sundayItems" *ngFor="let item of consignmentForm.get('sundayItems').controls; let i = index;">
+                                      <div class="form-group row" [formGroupName]="i" [ngClass]="{'item-error':itemsInvalidMsg[i]}">
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="starttime" [meridian]="meridian"></ngb-timepicker>
+  
+                                          </div>
+                                          <div class="col-md-3">
+                                              <ngb-timepicker [minuteStep]=15 (keypress)="numberOnly($event)" formControlName="endtime" [meridian]="meridian"></ngb-timepicker>
+                                          </div>
+  
+                                          <div class="col-md-2">
+                                              <button (click)="deleteItemsunday(i,item)" style="cursor: default" type="button" class="btn btn-sm btn-primary" [disabled]="consignmentForm.get('sundayItems').controls.length <= 1"><i class="fa fa-trash"></i></button>
+                                          </div>
+                                      </div>
+  
+                                  </div>
+                              </nb-accordion-item-body>
+                          </nb-accordion-item>
+                      </nb-accordion>
+  
+                  </div>
+  
+              </div>
+              <div class="col-md-10 offset-md-1 " style="bottom: 3px;">
+                  <div class="row align-items-center justify-content-center mt-4">
+                      <button type="button" class="btn btn-success" (click)="saveAvailableHours()" i18n>Next</button>
+                  </div>
+              </div>
+  
+          </form>
+        </mat-tab>
+  
+        <mat-tab label="Manage Tag" [disabled]='disabletab'>
+              <div class="profile-user-info">
+                  <br>
+                  <div class="profile-info-row">
+                      <div class="profile-info-name" style="vertical-align: top;padding-top: 15px;" i18n>Menu Tag: </div>
+                      <div class="profile-info-value" style="height: 200px;">
+                          <span> 
+                              <angular2-multiselect class="menutag-select-box"
+                                 
+                                  [data]="dropdownList"
+                                  [(ngModel)]="menuDetails.vendorTagId"
+                                  [settings]="dropdownSettings"
+                                  (onSelect)="onItemSelect($event)"
+                                  (onSelectAll)="onSelectAll($event)">
+                              </angular2-multiselect >
+                          </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-10 offset-md-1 " style="bottom: 1%;">
+                  <div class="row align-items-center justify-content-center mt-4">
+                      <button type="button" class="btn btn-success" (click)="saveTag()" i18n>Save</button>
+                  </div>
+              </div>
+            </mat-tab>
+      </mat-tab-group>
+    </nb-card-body>
+    <nb-card>

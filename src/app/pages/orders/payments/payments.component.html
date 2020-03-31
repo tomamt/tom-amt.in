@@ -1,0 +1,52 @@
+<nb-card>
+    <nb-card-header i18n>
+        Payments
+    </nb-card-header>
+    <nb-card-body>
+        <div class="container">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr style="text-align: center;">
+                            <th (click)="sort('_id')" style="font-weight: bold;"><span i18n>Order ID</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='_id'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('createdDate')" style="font-weight: bold;"><span i18n>Date</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='createdDate'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('status')" style="font-weight: bold;"><span i18n>Status</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='status'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('paymentType')" style="font-weight: bold;"><span i18n>Payment Type</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='paymentType'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('amount')" style="font-weight: bold;"><span i18n>Total</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='amount'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('actions')" style="font-weight: bold;"><span i18n>Actions</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='actions'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of paymentsList | orderBy: key : !reverse ; let i = index" >
+                            <td>{{order.orderId.orderId}}</td>
+                            <td style="text-transform: lowercase;">{{order.createdDate | date:'hh:mma MM/dd/yy'}}</td>
+                            <td style="text-transform: capitalize;">{{order.status}}</td>
+                            <td style="text-transform: capitalize;">{{order.paymentType}}</td>
+                            <td><b>{{currency}}</b>{{order.amount | number : '1.2-2' }}</td>
+                            <td style="text-align: center;"><i class="fa fa-eye" i18n-title title="View Payments Details" style="font-size:25px;cursor: pointer;" (click)="viewPayment(order)"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="margin-left:35%;" *ngIf="paymentsList.length!=0">
+                    <ngx-paginate  [page]="page" [options]="defaults" (pageChange)='setPage($event)'></ngx-paginate>
+                </div>
+                <div style="margin-left:40%;" *ngIf="paymentsList.length==0" i18n>
+                   No data to show
+                </div>
+            </div>
+        </div>
+       
+    </nb-card-body>
+</nb-card>

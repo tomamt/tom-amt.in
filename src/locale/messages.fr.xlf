@@ -1,0 +1,3215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <target>Fermer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <target>Précédente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <target>Prochain</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <target>Le mois précédent</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <target>Le mois prochain</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <target>Sélectionnez un mois</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <target>Sélectionnez l'année</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <target>««</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <target>«</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <target>»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <target>»»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <target>Première</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <target>Précédente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <target>Prochain</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <target>Dernière</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</source>
+        <target><x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <target>Heures d'incrémentation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <target>HH</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <target>Hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <target>Décrémenter les heures</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <target>Incrémenter les minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <target>MM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <target>Minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <target>Décrémenter les minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <target>Incrémenter les secondes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <target>SS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <target>Secondes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <target>Décrémenter les secondes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getAfternoonPeriod() }}"/></source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i18n.getAfternoonPeriod() }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getMorningPeriod() }}"/></source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i18n.getMorningPeriod() }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <target>Fermer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/toast/toast.d.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b9c8f4daede2b00eb83f9dfddf0fd8440d44525c" datatype="html">
+        <source>GRAMMI Team Sign In</source>
+        <target>Connexion à l'équipe GRAMMI</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ef09d5a15cdb1ff36c4f9324f00f4feeddc2fff" datatype="html">
+        <source> Sign In </source>
+        <target>Se connecter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7efe8011943cbbf73258c6f56aad712c88266366" datatype="html">
+        <source> Sign Out </source>
+        <target>Déconnexion</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="040055753cdedbc34f3d59cd07c1a93a7f7b47c5" datatype="html">
+        <source>Enter User Details</source>
+        <target>Entrez les détails de l'utilisateur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/dialog/dialog-name-prompt/dialog-name-prompt.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <target>Nom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/dialog/dialog-name-prompt/dialog-name-prompt.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/dialog/dialog-name-prompt/dialog-name-prompt.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/dialog/dialog-name-prompt/dialog-name-prompt.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="efe5910cf9e0741c4d0d3cfb2964c8ee12c6ead3" datatype="html">
+        <source>Send Invite</source>
+        <target>Envoyer une invitation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/dialog/dialog-name-prompt/dialog-name-prompt.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
+        <source>Date</source>
+        <target>Date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ccac601bf473fa28c9ac46794f1cd40542f74347" datatype="html">
+        <source>Message</source>
+        <target>Message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aef2174d38cacd85e7efd87f3e4d68b2b5514600" datatype="html">
+        <source>Voice Note</source>
+        <target>Note vocale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2bf5a31043ff476ca081a4080f3f3f17518dc6f2" datatype="html">
+        <source>Reporter</source>
+        <target>Journaliste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fae4716225ad1e9d3b183ba6c557214e52cdf180" datatype="html">
+        <source>Order ID</source>
+        <target>numéro de commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="81b97b8ea996ad1e4f9fca8415021850214884b1" datatype="html">
+        <source>Status</source>
+        <target>Statut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bd5e17c9582661e20763a7634ef07881e33bbd7" datatype="html">
+        <source>Action</source>
+        <target>Action</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5329ebe19cc27e65785e76e610bb448ed1f4ded9" datatype="html">
+        <source>No message</source>
+        <target>Pas de message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="179dc872502c1f93160e73ad37bc7860e421f436" datatype="html">
+        <source>No voice note</source>
+        <target>Aucune note vocale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="564bc646131ab645319a47f0b952071f61b48a03" datatype="html">
+        <source>Manage Issue</source>
+        <target>Gérer le problème</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b706bbb24d478bc17545b36ce728fd45193c4d14" datatype="html">
+        <source>No records found</source>
+        <target>Aucun enregistrement trouvé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/manage-alerts/manage-alerts.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc45aee6c42b2aebbd7f4b44d8571f174156c51c" datatype="html">
+        <source>Manage Problem</source>
+        <target>Gérer le problème</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="00cefcd0042132db80bbf5dc4577799069da3955" datatype="html">
+        <source>Problem Details</source>
+        <target>Détails du problème</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e78c0d60ac39787f62c9159646fe0b3c1ed55a1d" datatype="html">
+        <source>Type:</source>
+        <target>Type:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8865ed3834a850ae6123ce54f380aac3f0b88fe2" datatype="html">
+        <source>Message:</source>
+        <target>Message:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b70e86801585d4edc8b7cec76c76fd0eb4f59a2" datatype="html">
+        <source>Details:</source>
+        <target>Détails:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="05fa0bded36de6e73a1fa44838b627349dace044" datatype="html">
+        <source>Date:</source>
+        <target>Date:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1a3f312dba404b6e87fe79fe028b68f39a8919f" datatype="html">
+        <source>Reporter:</source>
+        <target>Journaliste:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22181f4b7526d215b6973cb90fd0fda48c777b2d" datatype="html">
+        <source>Order ID:</source>
+        <target>Numéro de commande:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d7f143bdf134cf8a34c7ca43ea3b6afc64644c7" datatype="html">
+        <source>Status:</source>
+        <target>Statut:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cfc3f1d747086487a1769e31da62a93c36d561da" datatype="html">
+        <source>Action:</source>
+        <target>Action:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="91ce116be6e8df104128f339912c9207f01265cd" datatype="html">
+        <source>Amount:</source>
+        <target>Montante:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b4b8397fc03c1b83f2cb134b68efe104785189f" datatype="html">
+        <source>Audio:</source>
+        <target>L'audio:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="030b4423b92167200e39519599f9b863b4f7c62c" datatype="html">
+        <source>Actions</source>
+        <target>Actions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37cc23d2cc90f5ab2f61d8d74d0dc933b02e8262" datatype="html">
+        <source>Manage Queue</source>
+        <target>Gérer la file d'attente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe74aa071fa92187c9a329fc5dc25106821415c2" datatype="html">
+        <source>Close Issue</source>
+        <target>Fermer le problème</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72698cc0f2aef251c79548f7e47ae942880257e5" datatype="html">
+        <source>Close Issue &amp; Refund</source>
+        <target>Fermer le problème et le remboursement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9ae8dd59921c91f0c65b4837e35b972598f57bd6" datatype="html">
+        <source>Close Issue &amp; Partial Refund</source>
+        <target>Fermer le problème et remboursement partiel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="133648b14bf76a10e7b8a210884e6a112eb6e55d" datatype="html">
+        <source>Cancel Order</source>
+        <target>annuler la commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2910f8a80882f6a59f46b2830d9e87525c72a6db" datatype="html">
+        <source>Cancel &amp; Refund</source>
+        <target>Annulation et remboursement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ce492d0e728b4a94764d19a38d24b8674ee9e78" datatype="html">
+        <source>Cancel &amp; Partial Refund</source>
+        <target>Annulation et remboursement partiel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="660f55af92cc6d6a8d59760178d2d7625585a414" datatype="html">
+        <source>Issue is</source>
+        <target>Le problème est</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58730c1b66d92955242d68ae09b94aa4c86e6833" datatype="html">
+        <source>Status is</source>
+        <target>Le statut est</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ced7b173b49d067d4050d0ddb6b484b961eea785" datatype="html">
+        <source>Discount Amount:</source>
+        <target>Montant de la remise:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9c72cc522e23f26078b35ecf1bd5c80104dc2ad8" datatype="html">
+        <source>Delivery Charge:</source>
+        <target>Frais de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1a35944121b50ef21540a4eb83475939d21f247f" datatype="html">
+        <source>Packing Charge:</source>
+        <target>Frais d'emballage:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="441613f30e92201ab65baf0c608c35d4d780ddd7" datatype="html">
+        <source>Tax Amount:</source>
+        <target>Montant de la taxe:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="923f958c239ee57d505375acce6a665317d46fb8" datatype="html">
+        <source>Sub Total:</source>
+        <target>Sous-total:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f40c971c2157f634aa445f7c72ab61840db4c82b" datatype="html">
+        <source>Total Amount:</source>
+        <target>Montant total:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71c77bb8cecdf11ec3eead24dd1ba506573fa9cd" datatype="html">
+        <source>Submit</source>
+        <target>Soumettre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/dialog/manage-problems/manage-problems.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddc31525c4778f6123079d9bad7e3eca6e2aff59" datatype="html">
+        <source>Delivery Agent App</source>
+        <target>Application d'agent de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a60ebdce270a866bab1ef10eac2ba8b9e2f9ae6a" datatype="html">
+        <source>Follow the below links to get your Delivery Agent App.</source>
+        <target>Suivez les liens ci-dessous pour obtenir votre application d'agent de livraison.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2550181f4be3b7a3d9a03d3d5250b7fd0be83b3" datatype="html">
+        <source>Crew App</source>
+        <target>Crew App</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b4f1d97f1e31ddbb181745d56e0f3bc967fcee1e" datatype="html">
+        <source>Follow the below links to get your Delivery Crew App.</source>
+        <target>Suivez les liens ci-dessous pour obtenir votre application Delivery Crew.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="723d34d35afe6cde0508bce22cf2b78ff2542a2b" datatype="html">
+        <source>Grammi Team Sign in</source>
+        <target>Connexion à l'équipe Grammi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8500bc25b5fb43a0487cfc649b081a93d62b02f" datatype="html">
+        <source>Sign In</source>
+        <target>Se connecter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb926a102b4ac21011eb2e7e4868fe1bf1f44e0e" datatype="html">
+        <source>Sign Out</source>
+        <target>Déconnexion</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e86b2d37453ad55cd469f48512bc52b925fcbc7" datatype="html">
+        <source>Welcome to Team GRAMMI!</source>
+        <target>Bienvenue dans l'équipe GRAMMI!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/e-commerce/e-commerce.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78e81e4855b0cc48a2f0fd43fdfa83d325a6583c" datatype="html">
+        <source>Select any menu item to get started.</source>
+        <target>Sélectionnez un élément de menu pour commencer.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/e-commerce/e-commerce.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25bf23a606fd14017dc3a5341532cbd87c43d51f" datatype="html">
+        <source>Thanks for signing up with GRAMMI!</source>
+        <target>Merci de vous être inscrit à GRAMMI!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/e-commerce/e-commerce.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4cb6c6b2244b4aaf5faa9ffd95aa8ff6d5ac729c" datatype="html">
+        <source>Please log-in to the mobile or tablet app to get started.</source>
+        <target>Veuillez vous connecter à l'application mobile ou tablette pour commencer.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/e-commerce/e-commerce.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52f129d0acf224a207f1ea0495b7a192c2876d54" datatype="html">
+        <source>Admins</source>
+        <target>Administratrices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/admins/admins.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2badbd2e3cffce83793f91b3fd36e7a72ae58961" datatype="html">
+        <source>Add Admin</source>
+        <target>Ajouter un administrateur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/admins/admins.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb362eb3b0e919d3e2a48c02ad17529e8c5f07c2" datatype="html">
+        <source>Crew Members</source>
+        <target>Membres d'équipage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/crew-members/crew-members.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="641825e4845aae2bc6a1b06838c79073131d3fad" datatype="html">
+        <source>Add Crew Member</source>
+        <target>Ajouter un membre d'équipage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/crew-members/crew-members.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="259f67c8bfab90c150f037bb16c01005035faf2a" datatype="html">
+        <source>Delivery Managers</source>
+        <target>Directeurs de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/delivery-agent-managers/delivery-agent-managers.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea15655c036bb103fe6b2ddda30fd8727f97ada2" datatype="html">
+        <source>Add Delivery Agent Manager</source>
+        <target>Ajouter Delivery Agent Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/delivery-agent-managers/delivery-agent-managers.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d8029750587baaa9467987f4b0214fffe67acab" datatype="html">
+        <source>Delivery Agents</source>
+        <target>Agents de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/delivery-agents/delivery-agents.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdd717a793faa5fd10d554810b8c0d6026eeff4c" datatype="html">
+        <source>Add Delivery Agent</source>
+        <target>Ajouter un agent de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/delivery-agents/delivery-agents.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9d85c9cf62aefca8329e6dbb2f888f5a462b62c0" datatype="html">
+        <source>Vendors</source>
+        <target>Vendeuses</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/vendors/vendors.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b92d6d73259ecd979eca0ab9891fc1d1d80039a8" datatype="html">
+        <source>Add Vendor</source>
+        <target>Ajouter un fournisseur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/vendors/vendors.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12f25bf021ba81d0564fce3972c9bc95618d34ad" datatype="html">
+        <source>Manage Profile</source>
+        <target>Gérer le profil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84d272b1ab3b9f76dfd234608acd24f416e63f34" datatype="html">
+        <source>Restaurant Name</source>
+        <target>Nom du restaurant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="db654f91d847f34e71ffb99268ff3a1807913421" datatype="html">
+        <source>Phone Number</source>
+        <target>Numéro de téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11f4334bbb40a09c78f16d8e11e68cfd01badd4d" datatype="html">
+        <source>Terminal</source>
+        <target>Terminal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c93118f0483429881372edbc1efcbba8af077d05" datatype="html">
+        <source>Select Terminal</source>
+        <target>Sélectionnez un terminal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9000cf4939ebb044ff40f6e6acf06837a853db01" datatype="html">
+        <source>Gate</source>
+        <target>Porte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="357b27fe15d44db2f65e9d6f9c1d9a1f320af8bd" datatype="html">
+        <source>Select Gate</source>
+        <target>Sélectionnez la porte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0cdfe14850f5043a7bbea704f333bef1afb9d91" datatype="html">
+        <source>Type of cuisine</source>
+        <target>Type de cuisine</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="16bd439b2872151a3bd8698286487604a22d80e0" datatype="html">
+        <source>Shop License</source>
+        <target>Licence de boutique</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b3cc9107c02d6f9f573aca45e172a0003d359037" datatype="html">
+        <source>Tax ID</source>
+        <target>Numéro d'identification fiscale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f732c304c7433e5a83ffcd862c3dce709a0f4982" datatype="html">
+        <source>Next</source>
+        <target>Prochain</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">373</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">409</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">392</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed7ab3074b735567a622318bd9fe667c7186d1a6" datatype="html">
+        <source>Background color: </source>
+        <target>Couleur de l'arrière plan:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c96dd7475048bffc650e0f1b5fd4995b3fefc439" datatype="html">
+        <source>Logo Image</source>
+        <target>Image logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3a2a9bb12d904f3dd84e42cfad37afef4a6b35f6" datatype="html">
+        <source>Choose a file</source>
+        <target>Choisissez un fichier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <target>sauvegarder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">420</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4e9a05bf09c15076837c7db9901d86f712333d7c" datatype="html">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d51ab672d6b294dbbc6ccd9adf710812b3e5478d" datatype="html">
+        <source>Cover Image</source>
+        <target>Image de couverture</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="847e1bfed07a43f4ae2775b8f38715ed3185c33f" datatype="html">
+        <source>Times are displayed in Detroit Time Zone.</source>
+        <target>Les heures sont affichées dans le fuseau horaire de Detroit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d679e3adb48ec8312f73f151efb914d5a4b9e864" datatype="html">
+        <source>Monday</source>
+        <target>Lundi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6e7151132033a37ca2d30030b1d2fde6537342cb" datatype="html">
+        <source>Tuesday</source>
+        <target>Mardi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a804dd565c69b33263bd8849e055efc241cf9fa" datatype="html">
+        <source>Wednesday</source>
+        <target>Mercredi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6fbd79307b393b8ef0ab178402d492493d568cd0" datatype="html">
+        <source>Thursday</source>
+        <target>Jeudi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="342cb18a5614024dd2bc222edf084e3911408b66" datatype="html">
+        <source>Friday</source>
+        <target>Vendredi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="979bdcb2ad62d32e37b945f211811f11f6eabc84" datatype="html">
+        <source>Saturday</source>
+        <target>samedi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">306</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0f912cb66135c1aa146146f134dc2cd84a0dea31" datatype="html">
+        <source>Sunday</source>
+        <target>dimanche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">330</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2eca2a220f0251e477d5d2d50890434440b096df" datatype="html">
+        <source>Please choose from the default tags or add your own tags</source>
+        <target>Veuillez choisir parmi les balises par défaut ou ajouter vos propres balises</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a066b88dc404f10d80e1efc7875fc8db8bcfaed8" datatype="html">
+        <source>Save</source>
+        <target>sauvegarder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/profile/profile.component.html</context>
+          <context context-type="linenumber">396</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a87c62bf4ecc656a205421ce1395a1f98013ea2f" datatype="html">
+        <source>/ Manage Delivery Agent</source>
+        <target>/ Gérer l'agent de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="891e4f9fcb798ca369fae12fef57ab8eacc2cc63" datatype="html">
+        <source>Select status</source>
+        <target>Sélectionnez le statut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7a82803130b25c79f426ff92e76f134c393019d9" datatype="html">
+        <source>Employee ID</source>
+        <target>ID d'employé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="613760caca33e2371df4793304e5ff343c352897" datatype="html">
+        <source>No Shows:</source>
+        <target>Pas de spectacles:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8e2c382a10cdf8dcf737acfdcabd9f313d4d5fe4" datatype="html">
+        <source>Total Hours:</source>
+        <target>Heures totales:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af8f9413ab0931bf9a7ea25a40c32819a7f515e1" datatype="html">
+        <source>Select Date</source>
+        <target>Sélectionner une date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ca707824ab93066c7d9b44e1b8bf216725c2c22" datatype="html">
+        <source>Filter</source>
+        <target>Filtre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83b2213a3d86781100bf11ed8541318e4d78d6f8" datatype="html">
+        <source>Force Clock Out</source>
+        <target>Forcer la sortie d'horloge</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5989b5ae9ef17c04c77d455ef7806e0a8fee0779" datatype="html">
+        <source>Register No Show</source>
+        <target>S'inscrire No Show</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d9893a5ed06c3168797af096f40f48c59396aaf" datatype="html">
+        <source>Current Order Queue</source>
+        <target>File d'attente des commandes en cours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c9c1e6110aa1b274aefc4c7724d3ef16cca736dc" datatype="html">
+        <source>Delivery Terminal:</source>
+        <target>Terminal de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b348c73e0c80e05db0bbe60e0ead71aa22eca46" datatype="html">
+        <source>Delivery Location:</source>
+        <target>Lieu de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6f47daa0d002e4dfd2777506fc8ee203c405fbd0" datatype="html">
+        <source>Order ID: </source>
+        <target>Numéro de commande:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3999e1635e55c7067493801b01b83020f7511d39" datatype="html">
+        <source>Order Status: </source>
+        <target>Statut de la commande:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0fcc7061da3c01683e337944dc756a1e876a99f1" datatype="html">
+        <source>Delivery Terminal: </source>
+        <target>Terminal de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cbcb225aaaca49bcb7c195107418ee1152226442" datatype="html">
+        <source>Delivery Location: </source>
+        <target>Lieu de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e499fbd79216a40c201f6a202fdbad5814dd43f" datatype="html">
+        <source>Vendor Name: </source>
+        <target>Nom du vendeur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2bc0ae4ed327c1c769488c0a81f4790ce1b96d9" datatype="html">
+        <source>Vendor Email: </source>
+        <target>Courriel du fournisseur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5f05df9275e7cfef25a590a042e1d33ecb9f7fc2" datatype="html">
+        <source>Vendor Phone Number: </source>
+        <target>Numéro de téléphone du vendeur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b60703c52cc66fce3e352eb3f2cb4f950fcea8e9" datatype="html">
+        <source>Order Placed: </source>
+        <target>Commande passée:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="98f9bed0598c0beb9b267dbb29b595b696053f7b" datatype="html">
+        <source>Expected Delivery Time: </source>
+        <target>Délai de livraison prévu:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e71dc6fe89ff5beb3e956f3361e8c329f7612f3b" datatype="html">
+        <source>Payment Status: </source>
+        <target>Statut de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="be432b5e44d38620ba73083cef9a84fd5c83c679" datatype="html">
+        <source>Payment Method: </source>
+        <target>Mode de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7302c322b7c452564f5da87b4fe58cd86a10fc48" datatype="html">
+        <source>Customer Name: </source>
+        <target>Nom du client:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cbec2837ef34cbe874e075f4452c6ad6c6708271" datatype="html">
+        <source>Customer Phone Number: </source>
+        <target>Numéro de téléphone du client:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6afdc1033edf82237f43ba4250c73b38cd27fb4" datatype="html">
+        <source>Discount Amount: </source>
+        <target>Montant de la remise:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17670c6c8a073fa57d91a113634ddd711e53409f" datatype="html">
+        <source>Packing Amount: </source>
+        <target>Montant d'emballage:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8815153fe98bcc72a8bfb89535d3242b62ec5679" datatype="html">
+        <source>Delivery Amount: </source>
+        <target>Montant de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="678500f6741254375bfa79a5bb5513a86dceed57" datatype="html">
+        <source>Tax Percentage: </source>
+        <target>Pourcentage fiscal:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="943b805c949f5d97468a5d1b34401e1db994f3a5" datatype="html">
+        <source>Tax Amount: </source>
+        <target>Montant de la taxe:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5a6ce7f19b483ebbfaf0bd7c1716fe73d65cce76" datatype="html">
+        <source>Sub Total: </source>
+        <target>Sous-total:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46ddf4fa76e5c1e67a5c2a617331d6272a8f4dbe" datatype="html">
+        <source>Total Amount: </source>
+        <target>Montant total:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85cc8cd03472ed9258bc1122d3a719b20f42ecaf" datatype="html">
+        <source>Item Details: </source>
+        <target>Détails de l'article:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eeb7dd1ffa3f9e6686a5b46d4e37a4b70bc3b0fa" datatype="html">
+        <source>Item Name</source>
+        <target>Nom de l'article</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4d6ee53858628de558a18623894a03c8673bce9e" datatype="html">
+        <source>Price</source>
+        <target>Prix</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ca30c1aa79fb5ab487fbd2caa4ca01f2f6691d70" datatype="html">
+        <source>Quantity</source>
+        <target>Quantité</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e080593c597b29d9311a957a5b6be90eb85bc90b" datatype="html">
+        <source>No records found</source>
+        <target>Aucun enregistrement trouvé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/users/view-delivery-agent/view-delivery-agent.component.html</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="50b150e4daa305e18e9d5ee77bcf5965c1f56f21" datatype="html">
+        <source>Manage Menu</source>
+        <target>Gérer le menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/manage-menu/manage-menu.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ba43bc9cf12aec89f0e86e030cd3589a3f6b7dc" datatype="html">
+        <source>Manage Menu</source>
+        <target>Gérer le menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="89e04478c06ad6af9c2cb579f05b771e30a276f5" datatype="html">
+        <source>/ Manage Item</source>
+        <target>/ Gérer l'élément</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <target>La description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="03d55a1f9522d1b25e007f9352e5b9fdedd1c79d" datatype="html">
+        <source>Preparation Time</source>
+        <target>Temps de préparation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7dd13489811e42d955586f5bd233997211de933b" datatype="html">
+        <source>Menu Item Image</source>
+        <target>Élément de menu Image</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="098d6dad19afbb810b6fcd33dcde36d0388af52a" datatype="html">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b2973bfaa600671a01e9158e6b65982bd60961c" datatype="html">
+        <source>Featured Image</source>
+        <target>L'image sélectionnée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6556e44b598d0d6ae4f50363ae8d948cf4e76957" datatype="html">
+        <source>Menu Section</source>
+        <target>Section Menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a4417c82097de0ac92f624583c75830cbc2c6ba6" datatype="html">
+        <source>Populate vendor available hours as Menu item available hours</source>
+        <target>Remplir les heures disponibles du fournisseur en tant qu'éléments de menu disponibles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12f7c7892774e75b407993b8e86ebacb2e7166b8" datatype="html">
+        <source>Times are displayed in Detroit Time Zone.</source>
+        <target>Les heures sont affichées dans le fuseau horaire de Detroit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0e8c756cb7fad34abcc32d5fd6a72cc6a1c669fe" datatype="html">
+        <source>Monday</source>
+        <target>Lundi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff8ed3e35776102ad8ecbb8f366bdd710d26837f" datatype="html">
+        <source>Tuesday</source>
+        <target>Mardi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">222</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bed915582419d9d453e63beaa7fc7bd99d3bdc2" datatype="html">
+        <source>Wednesday</source>
+        <target>Mercredi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="89bd1a57f257ecfb6cd4ac7728783f27c9d5188e" datatype="html">
+        <source>Thursday</source>
+        <target>Jeudi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7af64aaf4eea3f0444202e6577d3e1ed3ca8107e" datatype="html">
+        <source>Friday</source>
+        <target>Vendredi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f72f6ad1cbc1ae76a30d4ba25a34b36ed8814ede" datatype="html">
+        <source>Saturday</source>
+        <target>samedi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">332</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2fe432ca2cc64ad524658dca91493251906f5849" datatype="html">
+        <source>Sunday</source>
+        <target>dimanche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="74a2381fc2332ca07b8bc55caebea763a387e0b2" datatype="html">
+        <source>Menu Tag: </source>
+        <target>Étiquette de menu:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/menu/edit-menu/edit-menu.component.html</context>
+          <context context-type="linenumber">403</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7ee41bc5f5f0d26bd119531316d88053aeeb333a" datatype="html">
+        <source>Live Orders</source>
+        <target>Commandes en direct</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ca4e23324ef2b387cb5105e79a3c721f71a0389" datatype="html">
+        <source>Orders with Issues</source>
+        <target>Commandes en direct</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="061aa379688282a438b7c19e1cdf8385281fa5dc" datatype="html">
+        <source>Delivery Time Exceeded</source>
+        <target>Délai de livraison dépassé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76b7ae6cb5f8da11942e985e02451849c691ca87" datatype="html">
+        <source>Search Order ID</source>
+        <target>ID de commande de recherche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="042f9673b8fc9d8fa56f5522b2be7f648e4eabda" datatype="html">
+        <source>Order Placed</source>
+        <target>Commande passée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dfc2fb58e2a04ed944a4bd80f0a2087775134068" datatype="html">
+        <source>Amount</source>
+        <target>Montante</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6260c368ecf62216982fb1c55e38c8a831f0c299" datatype="html">
+        <source>Expected Delivery Time</source>
+        <target>Délai de livraison prévu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="165cf95c6f47664e590f303709b920c62d74ce20" datatype="html">
+        <source>View Order Details</source>
+        <target>Voir d'autres détails</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7781722bda136a4594d4c5527c1e59c657022717" datatype="html">
+        <source>No records found</source>
+        <target>Aucun enregistrement trouvé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/live-orders/live-orders.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d341c5c29e267bfd4d12bfd5c7b0865c290afdd" datatype="html">
+        <source>Past Orders</source>
+        <target>Commandes passées</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dad25c0db9ef9ab2ecfba559a6dccfdadd341acf" datatype="html">
+        <source>Delivery Location</source>
+        <target>Lieu de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/past-orders/past-orders.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="870829ee60cf1886b21cca57e66db991da8f2b2a" datatype="html">
+        <source>Manage Coupons</source>
+        <target>Gérer les coupons</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/coupons/coupons.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aa9e7bfb66a51d9b304e048b9937d4e505616b61" datatype="html">
+        <source>Manage Coupon</source>
+        <target>Gérer le coupon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2dc5be3d093543654c8bccdf5ebf8805b234553b" datatype="html">
+        <source>Coupon Name</source>
+        <target>Nom du coupon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e6c3861796ecd9b8d67af1af8781df03121e5225" datatype="html">
+        <source>Description: </source>
+        <target>La description:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="082ddd23ae3dd76a0a62f0972fe7c6744394a434" datatype="html">
+        <source>Coupon Code</source>
+        <target>Code promo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d2a3bfe9ad73fa0ee9818f2c1b6087244d82ff75" datatype="html">
+        <source>Select Status</source>
+        <target>Sélectionnez le statut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adffc089688bd4b27e55afe9cfdc7940f5782b2d" datatype="html">
+        <source>Promotion Start Date</source>
+        <target>Date de début de la promotion</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c96b20d9288caee58637bdd33d81bf37b171d3c7" datatype="html">
+        <source>Choose a Promotion Start Date</source>
+        <target>Choisissez une date de début de promotion</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="41d055ec9cef3afb116c3118c2244ee66c895fbb" datatype="html">
+        <source>Expiration Date</source>
+        <target>Date d'expiration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6adf4fd6888822e52b1d95038567633a71a01abc" datatype="html">
+        <source>Choose Expiration Date</source>
+        <target>Choisissez la date d'expiration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1535c0c7d10a570e1d33f379e65449508d3733c8" datatype="html">
+        <source>Usage Limit</source>
+        <target>Limite d'utilisation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="64ffc6f2229c2979f03ff6741a2cb6998489c1a7" datatype="html">
+        <source>Discount Percentage</source>
+        <target>Pourcentage de remise</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2b3d4b6760143a7bd3ef35719584028be722ad6" datatype="html">
+        <source>Minimum Order Amount</source>
+        <target>Montant minimum de commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1031fb988518cb683817e483d97585eeffa30132" datatype="html">
+        <source>Maximum Discount Amount</source>
+        <target>Montant de remise maximum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/edit-coupon/edit-coupon.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17731e9adceda104d135b5ddf8e7899a4551ce97" datatype="html">
+        <source>Manage Alerts / </source>
+        <target>Gérer les alertes /</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3569eaf2c7a46c291633eb8d03e63fb73450cdc0" datatype="html">
+        <source>Select Delivery Agent</source>
+        <target>Sélectionner un agent de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e6c975ebea8b5f8b120905ca7acf9f8edf59d8e" datatype="html">
+        <source>OK</source>
+        <target>D'accord</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/manage-queue/manage-queue.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4e7f5f07ae8e67878f35b34bcee10e39300ff41a" datatype="html">
+        <source>Orders</source>
+        <target>Ordres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb9e8aa74b2b7662a17200353a3e6b69faec017b" datatype="html">
+        <source>/ Manage Order</source>
+        <target>/ Gérer la commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="363a247747cca480409f226ceec7432965b967e4" datatype="html">
+        <source>Order Details</source>
+        <target>détails de la commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="836af3bf69fba1fdb6cc85ff845ef9f3269aa3a5" datatype="html">
+        <source>Order Status:</source>
+        <target>Statut de la commande:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df45aff63ed5de1eedde3e85354c2430890cf789" datatype="html">
+        <source>Customer Name:</source>
+        <target>Nom du client:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ca438a9c139dfb8b9e1c7f0d152702e103455fb8" datatype="html">
+        <source>Contact Number:</source>
+        <target>Numéro de contact:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="75b5468cd6195fb5f7666f5cd13916655ce94e18" datatype="html">
+        <source>Order Placed:</source>
+        <target>Commande passée:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d7f47ec87c7a5fb5f173d8b3e96547d4c553fae" datatype="html">
+        <source>Expected Delivery Time:</source>
+        <target>Délai de livraison prévu:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a6a39849d6ab7208016f7f6fb9cde1d68369d3c2" datatype="html">
+        <source>Delivery Agent Name:</source>
+        <target>Nom de l'agent de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ef0b75e74f7fb43350de42178c501a8bf999852" datatype="html">
+        <source>Delivery Agent Email:</source>
+        <target>Courriel de l'agent de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addf0dc8a913c19d58059639260d233f2258867f" datatype="html">
+        <source>Payment Details</source>
+        <target>Détails de paiement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fcaa970e1290ddc244d9f35f3fc0c536d83604cf" datatype="html">
+        <source>Payment Status:</source>
+        <target>Statut de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6922bcdf94efd578b547c6cb509b6af8aaf6f0da" datatype="html">
+        <source>Payment Method:</source>
+        <target>Mode de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="657c42d542c399df93e605830720e04060206b79" datatype="html">
+        <source>Packing Amount:</source>
+        <target>Montant d'emballage:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="55ce9d2d9ff5af4e907413284c0d89833a305b0f" datatype="html">
+        <source>Delivery Amount:</source>
+        <target>Montant de livraison:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7ff356ff0e501033a0ba8c6175f5840fa444cf97" datatype="html">
+        <source>Tax Percentage:</source>
+        <target>Pourcentage fiscal:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fffb902d4f74b522f35fbd44b7d524cc643e1289" datatype="html">
+        <source>Vendor Details</source>
+        <target>Détails du vendeur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5c771d36230e945278b152f9f3590d3b50198c88" datatype="html">
+        <source>Vendor Name:</source>
+        <target>Nom du vendeur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70460afc4cfdffa168d97af80c6657fa417017dd" datatype="html">
+        <source>Vendor Email:</source>
+        <target>Courriel du fournisseur:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9988ada51fbf826595b77a8de10fdcea198b4e82" datatype="html">
+        <source>Phone Number:</source>
+        <target>Numéro de téléphone:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9818deda85383bfa1e97c04a48e46736e3cdd510" datatype="html">
+        <source>License:</source>
+        <target>Licence:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5961f5ad3652c63ce7d377256c572c7139a82652" datatype="html">
+        <source>Tax ID:</source>
+        <target>Numéro d'identification fiscale:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f36f2802cd94db3575eb27f24871e8441caa1073" datatype="html">
+        <source>Cuisine:</source>
+        <target>Cuisine:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ada8f8ad40d045afa1bf5e5e27ad6585742548e" datatype="html">
+        <source>Airport:</source>
+        <target>Aéroport:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f6246b888140a6469a175d02633412a0a82bbe29" datatype="html">
+        <source>Item Details</source>
+        <target>Détails de l'article</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4ff2b9f00882347dc6a0d910f36d190927790977" datatype="html">
+        <source>Item Name:</source>
+        <target>Nom de l'article:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6ffeec779783d93e43e2f47cf6d45d74321bd040" datatype="html">
+        <source>Price:</source>
+        <target>Prix:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a73111d91982286c214fdeaf42b1d6275929973e" datatype="html">
+        <source>Quantity:</source>
+        <target>Quantité:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c60f12cca67891aca372730e390c1080c3e592be" datatype="html">
+        <source>Issues Reported</source>
+        <target>Problèmes signalés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f61c6867295f3b53d23557021f2f4e0aa1d0b8fc" datatype="html">
+        <source>Type</source>
+        <target>Type</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb6f6996aecb9bd904931ceaf8acf6f0477d276f" datatype="html">
+        <source>No data to display</source>
+        <target>aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">346</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">346</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a9b941f25f425bd907b8e23cbaed9e96a85e7db7" datatype="html">
+        <source>Rating</source>
+        <target>Évaluation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">350</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">350</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="758496ccd0c37659b18828f3234eac3915c1a32f" datatype="html">
+        <source>Rating:</source>
+        <target>Évaluation:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">356</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">356</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96e41129ef5d2fa12b7a6ffcab608e9af04d8cbd" datatype="html">
+        <source>Comment:</source>
+        <target>Commentaire:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="51d497c14580be9593f7804d152dd599e65c1026" datatype="html">
+        <source>Okey</source>
+        <target>d'accord</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7bd34bd120146afef0e0d8fa168d9bdabd594b6a" datatype="html">
+        <source>Good</source>
+        <target>Bien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">373</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">373</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d0a8e90407033047d11a35786fb1d2d2294bed4" datatype="html">
+        <source>Wow!</source>
+        <target>Hou la la!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-orders/view-orders.component.html</context>
+          <context context-type="linenumber">374</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">374</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="36c043351e21ba63a3cbd0ae4cd17dbfb33634ed" datatype="html">
+        <source>Ratings</source>
+        <target>Évaluations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="537ea3f2f2ed5c8a37cda3062c79b39ae41fc0cc" datatype="html">
+        <source>/ View Rating</source>
+        <target>/ Voir la note</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-rating/view-rating.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5564d6d93509ecf6ff31834c8693913459481ee8" datatype="html">
+        <source>Payments</source>
+        <target>Paiements</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="534aeba22240612ae0b9a76a9ddc20cec6fe2519" datatype="html">
+        <source>Payment Type</source>
+        <target>Type de paiement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d04d5b5d13ac9acf9750f1807f0227eeee98b247" datatype="html">
+        <source>Total</source>
+        <target>Totale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2da46961f3c8c3df14a861be00ee9d8534d8c783" datatype="html">
+        <source>View Payments Details</source>
+        <target>Afficher les détails du paiement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20248dfd78df46289f8fffebc8fe98b7c6383edb" datatype="html">
+        <source>No data to show</source>
+        <target>Aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/payments/payments.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c281c9511379a759506f70bea74d08cb9236ab78" datatype="html">
+        <source>Payments</source>
+        <target>Paiements</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cd25c801776889fdb80110b0fba9ad389e370fab" datatype="html">
+        <source>/ Manage Payments</source>
+        <target>/ Gérer les paiements</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3efd295b9e853578d9cdf9da0015acbcd2cc6e0" datatype="html">
+        <source>Payment Id:</source>
+        <target>Identifiant de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba281e45a422b77ad3d31f9851f277f4d242e427" datatype="html">
+        <source>Payment Type:</source>
+        <target>Type de paiement:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="325dfd1e8be81e7c38e404f1cec4c5ef3e85ddaf" datatype="html">
+        <source>Order Id:</source>
+        <target>Numéro de commande:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/view-payment/view-payment.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9c6e5e9fc308145a65dba9dd6550aaefd8f9a521" datatype="html">
+        <source>Ratings </source>
+        <target>Évaluations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d3a84ca632b164f419adea5d66c41a4ead347680" datatype="html">
+        <source>Order Status</source>
+        <target>Statut de la commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="396974120fc614fc930a27c8d15a094d82a3a9e4" datatype="html">
+        <source>Vendor</source>
+        <target>Vendeuse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="97e7da30de7499fcf212e1e0fd717865ce2aca3d" datatype="html">
+        <source>View Details</source>
+        <target>Voir les détails</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/orders/ratings/ratings.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68949525c4d9a901e0cd15a94e3fc8d2711e9918" datatype="html">
+        <source>Manage</source>
+        <target>Gérer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="910ad6db579d3a0e0acaffbb78833011fe5b5bcc" datatype="html">
+        <source>No records found</source>
+        <target>Aucun enregistrement trouvé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/recipient-cancellations/recipient-cancellations.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-issues/delivery-agent-issues.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-breaks/delivery-agent-breaks.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/alerts/delivery-agent-da-unavailable/delivery-agent-da-unavailable.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b73193f1c5654bba79f0ba80479936a10d0021f" datatype="html">
+        <source>Airport Analytics </source>
+        <target>Analytique aéroportuaire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c646beed4d3b870d42ea2f80c7483f0de62062f9" datatype="html">
+        <source>Terminal:</source>
+        <target>Terminal:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0d2f6e794300b81e1dfb1c75fca266b009435be" datatype="html">
+        <source>Date Range:</source>
+        <target>Plage de dates:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="476a0043a9192fcac3331f9065a52693f3704868" datatype="html">
+        <source>Please select date range</source>
+        <target>Veuillez sélectionner une plage de dates</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d04240283e3b2964f4a1111a5ad693e371ae675a" datatype="html">
+        <source>Gate Deliveries</source>
+        <target>Livraisons à la porte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b366c1aeb004e179de13e50b39e28afbcf94e23c" datatype="html">
+        <source>No Data to Show</source>
+        <target>Aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/airport-analytics/airport-analytics.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb5f782d8d2f513a5619c8311fbcb2215a650385" datatype="html">
+        <source>Operational Efficiency Analytics</source>
+        <target>Analyses d'efficacité opérationnelle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="234693f40a59f3665144396b68630fe6a505c464" datatype="html">
+        <source>Date Range:</source>
+        <target>Plage de dates:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7313f8e6bf1f3cdf2f4c84e3cb4c62f13bf6e26a" datatype="html">
+        <source>Choose a Date</source>
+        <target>Choisissez une date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d1213fc840ed7d78058ecedd5b515a273d440eaa" datatype="html">
+        <source>No data to show</source>
+        <target>Aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7d572f1f167e2f644e899058a5c67a9103afe82" datatype="html">
+        <source>Delivery Duration</source>
+        <target>Durée de livraison</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f77a89668b6e1e371b930afcf10ab0f9cfad431a" datatype="html">
+        <source>No data to show</source>
+        <target>Aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80ade688380d43abc6783da7c591d40bd487844c" datatype="html">
+        <source>5-star Ratings</source>
+        <target>Évaluations 5 étoiles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a68c81a960e3a8a3217aea30dc2d9b7c1c28185b" datatype="html">
+        <source>Cancellations</source>
+        <target>Annulations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0df20dd996c993c10450d466811d87a38397afcc" datatype="html">
+        <source>Successful Deliveries</source>
+        <target>Livraisons réussies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/operational-efficiency-analytics/operational-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cd7beea0bdb3244fac85053cf41871ff4cd83827" datatype="html">
+        <source>Vendor POS Efficiency Analytics</source>
+        <target>Analyse de l'efficacité des points de vente des fournisseurs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dfd846c18edbb2f717fc4730f5d578363b6c03e1" datatype="html">
+        <source>Vendor:</source>
+        <target>Vendeuse:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c47563c3c0162da6fc5da23f41459a9bf0d3a5c4" datatype="html">
+        <source>Select Vendor</source>
+        <target>Sélectionnez le fournisseur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f2532a2d1e754e72d78fabbdf8e5b38278096c83" datatype="html">
+        <source>Date Range:</source>
+        <target>Plage de dates:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1fb389e7738d77787e50460c9f1dd8965ad8ed38" datatype="html">
+        <source>Average Order Time</source>
+        <target>Temps moyen de commande</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4fd9d284ab32842fec187283e5470b9d27d93f08" datatype="html">
+        <source>No data to show</source>
+        <target>Aucune donnée à afficher</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c07bf29318120f78664046ce58cf3c37d9479654" datatype="html">
+        <source>Average Vendor Fullfillment Time</source>
+        <target>Temps de réalisation moyen du fournisseur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-efficiency-analytics/vendor-efficiency-analytics.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="49540e177e50830fee5b9affad7816f2edfe77d0" datatype="html">
+        <source>Vendor Information Analytics</source>
+        <target>Analyse des informations du fournisseur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c9c29aaa418f43c3eee0d26c2ec702e307bc97c" datatype="html">
+        <source>Vendor:</source>
+        <target>Vendeuse:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c8743d660bc806c663a5d5b0601706cc91f0ed5c" datatype="html">
+        <source>Type:</source>
+        <target>Type:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cf5edae5a35bd0369e7a9df7027c7d392f82ac3b" datatype="html">
+        <source>Select Analytics</source>
+        <target>Sélectionnez Analytics</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/vendor-information-analytics/vendor-information-analytics.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="019cb934981f7bd360ef7462ac71ac10e26bb58e" datatype="html">
+        <source>GRAMMI Productivity Analytics</source>
+        <target>GRAMMI Productivity Analytics</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="77e3154fdd035f41fb2af8eaa0b20d9b1e42a1e8" datatype="html">
+        <source>Terminal:</source>
+        <target>Terminal:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b3ab8bd06168589eed567140a398dd35669791a" datatype="html">
+        <source>Average Delivery Time</source>
+        <target>Délai de livraison moyen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2fa32dd7f8af29d6bfd28e64236895e868070609" datatype="html">
+        <source>Average Time Between Deliveries</source>
+        <target>Temps moyen entre les livraisons</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/analytics/grammi-productivity-analytics/grammi-productivity-analytics.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="15a94bee4963ac453dc463752c901c4f62c254df" datatype="html">
+        <source>404 Page Not Found</source>
+        <target>404 Page non trouvée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/miscellaneous/not-found/not-found.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e4920410fdeded7dfd658797d8d5534aab3d7c3" datatype="html">
+        <source>The page you were looking for doesn&apos;t exist</source>
+        <target>La page que vous recherchez n'existe pas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/miscellaneous/not-found/not-found.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="444cfeec8b3d1c0dfeadc29520f629bbe097cf25" datatype="html">
+        <source>Take me home</source>
+        <target>Emmène moi chez toi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/pages/miscellaneous/not-found/not-found.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

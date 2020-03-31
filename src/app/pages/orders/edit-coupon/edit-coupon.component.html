@@ -1,0 +1,120 @@
+<nb-card>
+  <nb-card-header i18n>
+      Manage Coupon
+  </nb-card-header>
+
+  <nb-card-body>
+        <div class="profile-user-info" *ngIf="CouponDetails">
+                
+            <br>
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Coupon Name</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                <div class="profile-info-value">
+                    <input type="text" i18n-placeholder placeholder="Coupon Name" class="form-control" id="usr" [(ngModel)]="CouponDetails.name">
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name" i18n>Description: </div>
+                <div class="profile-info-value">
+                    <input type="text" i18n-placeholder placeholder="Description" class="form-control" id="usr2" [(ngModel)]="CouponDetails.description">
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Coupon Code</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                <div class="profile-info-value" style="padding: 20px 0px 0px 6px;">
+                    <span> 
+                        <input type="text" i18n-placeholder placeholder="Coupon Code" class="form-control" id="stuff" [(ngModel)]="CouponDetails.code" (keydown)="onKeydown($event)">
+                    </span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Status</span><span style="color: red;font-size: 18px;">*</span>: </div>
+                <div class="profile-info-value">
+                    <span> 
+                        <select [(ngModel)]="CouponDetails.status" class="browser-default custom-select" i18n-placeholder placeholder="Select Status">
+                            <option selected value="" i18n>Select Status</option>
+                            <option *ngFor="let status of status;"  value="{{status.value}}">{{status.label}}</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Promotion Start Date</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <mat-form-field>
+                            <input matInput (ngModelChange)="changeMaxDate($event)" [min]="minDate" [(ngModel)]="CouponDetails.startDate" [matDatepicker]="picker" i18n-placeholder placeholder="Choose a Promotion Start Date" >
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Expiration Date</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <mat-form-field>
+                            <input matInput [min]="minDate2"  [(ngModel)]="CouponDetails.endDate" [matDatepicker]="pickers" i18n-placeholder placeholder="Choose Expiration Date">
+                            <mat-datepicker-toggle matSuffix [for]="pickers"></mat-datepicker-toggle>
+                            <mat-datepicker #pickers></mat-datepicker>
+                        </mat-form-field>
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Usage Limit</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <input min="0" type="number" (keypress)="numberOnly($event)" placeholder="Usage Limit" class="form-control" id="stuff" [(ngModel)]="CouponDetails.usageLimit">
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Discount Percentage</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <input type="number" min="1" max="99"  (keypress)="numberOnly($event)" placeholder="Discount Percentage" class="form-control" id="stuff" [(ngModel)]="CouponDetails.offerPercentage">
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Minimum Order Amount</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <input min="0" type="number" (keypress)="numberOnly2($event)" placeholder="Minimum Order Amount" class="form-control" id="stuff" [(ngModel)]="CouponDetails.minimumOrderAmount">
+                        <label for="stuff" class=" input-icon">{{currency}}</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"><span i18n>Maximum Discount Amount</span><span style="color: red;font-size: 18px;">*</span>:</div>
+                <div class="profile-info-value">
+                    <span> 
+                        <input min="0" type="number" (keypress)="numberOnly2($event)" placeholder="Maximum Discount Amount" class="form-control" id="stuff" [(ngModel)]="CouponDetails.maximumLimit">
+                        <label for="stuff" class=" input-icon">{{currency}}</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name"> </div>
+
+                <div class="profile-info-value">
+                    <span> 
+                        <button type="button" class="btn btn-success" (click)="savedetails()" i18n>Save</button>
+                        &nbsp;
+                        <button type="button" class="btn btn-success" (click)="cancel()" style="background-color: #787e79;border-color: #787e79;" i18n>Cancel</button>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+  </nb-card-body>
+<nb-card>

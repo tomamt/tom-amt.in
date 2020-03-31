@@ -1,0 +1,20 @@
+<div class="login-page" *ngIf="!auth.isAuthenticated">
+  <div style="position: absolute;left: 2%;top: 3%;">
+      <img src="/assets/images/logo.png"  style="height: 100%;" >
+  </div>
+  <div class="">
+    <h1 id="title" class="title" i18n>{{ 'signIn' | translate }}</h1>
+    <div class="image_tag" style="text-align: center;">
+      <img src="/assets/images/users.png"  style="height: 100%;" >
+    </div>
+    
+    <section class="another-action" aria-label="Register">
+      <button (click)="auth.login()" *ngIf="!auth.isAuthenticated" nbbutton=""  ng-reflect-shape="rectangle"
+      class="appearance-filled size-medium status-primary shape-rectangle" 
+      i18n> Sign In </button>
+      <button (click)="auth.logout()" *ngIf="auth.isAuthenticated" nbbutton=""  ng-reflect-shape="rectangle"
+      class="appearance-filled size-medium status-primary shape-rectangle" 
+      i18n> Sign Out </button>
+    </section>
+  </div>
+</div>

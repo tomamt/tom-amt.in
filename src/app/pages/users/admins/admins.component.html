@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header style="padding: 8px 1.25rem;">
+    <p class="crewHeading" ><b i18n>Admins</b></p>
+    <button class="crewAdd"(click)="addButton()" title="Add Admin" i18n-title>
+      <i class="nb-plus" style="font-size: 30px;"></i>
+    </button>
+  </nb-card-header>
+
+  <nb-card-body>
+   <ng2-smart-table [settings]="settings" [source]="source" 
+    (delete)="activateButton($event)">
+    </ng2-smart-table> 
+  </nb-card-body>
+</nb-card>

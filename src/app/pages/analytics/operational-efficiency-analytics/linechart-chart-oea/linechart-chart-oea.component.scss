@@ -1,0 +1,46 @@
+// ::ng-deep .tick line{
+//     opacity: 0.2;
+//     stroke: #9b9999;
+// }
+::ng-deep .svg-tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 200px;
+    top: 100px;
+      text-align: center;	
+    border-radius: 3px;
+    border: 1px solid #007CC2;
+    fill: #007CC2;
+    font-family: calibri helvetica sans-serif;
+    font-weight: bold;
+    pointer-events: none;	
+    z-index: 19;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+  }
+  ::ng-deep svg {
+    font-family: Sans-Serif, Arial;
+}
+::ng-deep .line {
+  stroke-width: 2;
+  fill: none;
+}
+
+::ng-deep .axis path {
+ 
+}
+
+::ng-deep .text {
+  font-size: 12px;
+}
+
+::ng-deep .title-text {
+  font-size: 12px;
+}
+::ng-deep .legend rect {
+  fill:white;
+ 
+  
+}

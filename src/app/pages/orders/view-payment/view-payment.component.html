@@ -1,0 +1,183 @@
+<nb-card>
+	<nb-card-header>
+    <a style="cursor: pointer;" (click)="previousPage()" i18n>Payments</a> <span i18n>/ Manage Payments</span>
+	</nb-card-header>
+	<nb-card-body >
+    
+    <div class="row" *ngIf="PaymentDetails">
+      
+      <div class="col-sm-6">
+        <div class="orderheading" style="text-align: center;"><b i18n>Payment Details</b></div>
+        <div style="border: 1px solid #d5e0eb;">
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Payment Id:</label>
+            <div class="col-sm-7">
+              <div type="text" class="form-control-plaintext" id="staticEmail">
+                {{PaymentDetails.paymentIntentId}}
+              </div>
+            </div>
+          </div>
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Date:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: lowercase;">
+                  {{PaymentDetails.createdDate | date:'hh:mma MM/dd/yy'}}
+                </div>
+            </div>
+          </div>
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Amount:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail">
+                    <b>{{currency}}</b>{{PaymentDetails.amount | number : '1.2-2' }}
+                  </div>
+            </div>
+          </div>
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Payment Status:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{PaymentDetails.status}}
+                  </div>
+            </div>
+          </div>
+          
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Payment Type:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{PaymentDetails.paymentType}}
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Vendor Name:</label>
+              <div class="col-sm-7" *ngIf="PaymentDetails.orderId">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                      {{PaymentDetails.orderId.vendorName}}
+                    </div>
+              </div>
+            </div>
+           
+            <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Customer Name:</label>
+              <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    {{PaymentDetails.orderId.recipientName}}
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Location:</label>
+              <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    {{PaymentDetails.orderId.deliveryLocationName}}
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Terminal:</label>
+              <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    {{PaymentDetails.orderId.deliveryAreaName}}
+                  </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+        <div class="orderheading" style="text-align: center;"><b i18n>Order Details</b></div>
+        <div style="border: 1px solid #d5e0eb;">          
+            <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Order Id:</label>
+              <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail">
+                    {{PaymentDetails.orderId.orderId}}
+                </div>
+              </div>
+            </div>
+         
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Order Status:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{PaymentDetails.orderId.status}}
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Tax Percentage:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{PaymentDetails.orderId.tax}}
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Tax Amount:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    <b>{{currency}}</b>{{PaymentDetails.orderId.taxAmount | number : '1.2-2' }}
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Amount:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    <b>{{currency}}</b>{{PaymentDetails.orderId.deliveryCharge | number : '1.2-2' }}
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group row form-group2" style="margin-bottom: 0;">
+            <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Packing Amount:</label>
+            <div class="col-sm-7">
+                <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    <b>{{currency}}</b>{{PaymentDetails.orderId.packingCharge | number : '1.2-2' }}
+                  </div>
+            </div>
+          </div>
+
+            <div class="form-group row form-group2" style="margin-bottom: 0;">
+              <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Sub Total:</label>
+              <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                      <b>{{currency}}</b>{{PaymentDetails.orderId.subTotal | number : '1.2-2' }}
+                    </div>
+              </div>
+            </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Discount Amount:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                        <b>{{currency}}</b>{{PaymentDetails.orderId.discountAmount | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Total Amount:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                        <b>{{currency}}</b>{{PaymentDetails.orderId.totalAmount | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+    </div>
+	</nb-card-body>
+</nb-card>

@@ -1,0 +1,129 @@
+::ng-deep  input-filter.ng-star-inserted:after {
+    content: "\f002";
+    margin-bottom: -2pc !important;
+    font-family: FontAwesome;
+    margin-left:5pc !important;
+    position: relative;
+    top: -27px;
+   
+    color: #999 !important;
+    display: inline-flex;
+    float: right;
+    margin-right: 6PX; 
+}
+::ng-deep .ngx-pagination   li:not(:last-child) {
+    border-right: 1px solid #edf1f7;
+  }
+  ::ng-deep .ngx-pagination   {
+    border: 1px solid #edf1f7;
+  }
+  .ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #2199e8;
+    color: #fefefe;
+    cursor: default;
+  }
+  ::ng-deep .page-selection .page-entry.active {
+    color: #fff !important;
+    background-color: #3366ff !important;
+    cursor: default !important;
+    padding: .75rem 1.25rem !important;
+    border-right:  1px solid #3366ff !important; ;
+    height: auto !important;
+}
+::ng-deep .page-selection .page-entry {
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-right: 1px solid #edf1f7 !important;
+  background-color: #fff !important;
+  margin: 0 0px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  min-width: 14px !important;
+  width: auto !important;
+  padding: .75rem 1.25rem  !important;
+  color:#3366ff ;
+}
+::ng-deep .pages .page-entry {
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-right: 1px solid #edf1f7 !important;
+  background-color: #fff !important;
+  margin: 0 0px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  min-width: 14px !important;
+  width: auto !important;
+  padding: .75rem 1.25rem  !important;
+  color:#3366ff ;
+}
+::ng-deep .pages {
+  border: 1px solid #edf1f7 !important;
+}
+::ng-deep .page-size-selection{
+  display:none !important;
+}
+
+.table thead th{
+  border: 1px solid #edf1f7;
+  
+  font-weight: 100;
+  }
+  td{
+  border: 1px solid #edf1f7;
+  
+  }
+  
+  ::ng-deep tbody tr:nth-child(2n) {
+  background-color: #f7f9fc;
+  }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #64dff0;
+    color: white;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background:#64dff0;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  ::ng-deep .searchfield{
+    border: 1px solid #edf1f7 !important;
+  }
+
+  .row-alert{
+    background: #d2747438;
+  }
+
+  .dateover{
+    background-color: #ffffe0;
+  }
+  tbody tr:nth-child(2n) {
+    background-color: #ffffff;
+  }

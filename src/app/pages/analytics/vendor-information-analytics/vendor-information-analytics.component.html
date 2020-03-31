@@ -1,0 +1,72 @@
+
+<nb-card>
+  <nb-card-header i18n>
+    Vendor Information Analytics
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="row" style="background: white;">
+      <div class="col-xxxl-1 col-xxl-1 col-lg-1 col-md-1" style="margin-top: 0.5%;text-align: right;" i18n>
+        Vendor:
+      </div>
+      <div class="col-xxxl-2 col-xxl-2 col-lg-2 col-md-2" >
+        <div >
+            <p-dropdown filter="true" i18n-placeholder placeholder="Select Vendor" (onChange)="vendorSelect(selectedVendor)" [options]="vendorList" [(ngModel)]="selectedVendor" itemSize="30" ></p-dropdown>
+        </div>
+      </div>
+      <div class="col-xxxl-2 col-xxl-2 col-lg-2 col-md-2" style="margin-top: 0.5%;text-align: right;" i18n>
+        Date Range:
+      </div>
+      <div class="col-xxxl-7 col-xxl-7 col-lg-7 col-md-7" >
+        <div *ngIf="!datepickerChanges">
+          <input type="text" style="width: 40%;"
+            ngxDaterangepickerMd
+            [(ngModel)]="selected"
+            [alwaysShowCalendars]="alwaysShowCalendars"  
+           
+            [linkedCalendars]="true"
+            [locale]="{applyLabel: 'Done'}"
+            (rangeClicked)="rangeClicked($event)"
+            (datesUpdated)="datesUpdated($event)"
+            [ranges]="ranges"
+            [keepCalendarOpeningWithRange]="keepCalendarOpeningWithRange"
+            i18n-placeholder
+            class="form-control"
+            placeholder="Please select date range"/>
+        </div>
+        <div *ngIf="datepickerChanges">
+          <input [nbDatepicker]="datepicker" [(ngModel)]="dateGrouped" (ngModelChange)="onDateSelect($event)">
+          <nb-datepicker #datepicker ></nb-datepicker>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="background: white;"> 
+      <div class="col-xxxl-1 col-xxl-1 col-lg-1 col-md-1" style="margin-top: 0.5%;text-align: right;" i18n>
+        Type:
+      </div> 
+      <div class="col-xxxl-2 col-xxl-2 col-lg-2 col-md-2" >
+        <div >
+            <p-dropdown filter="true" i18n-placeholder placeholder="Select Analytics" (onChange)="viaAnalyticsvendorSelect(selectedVIAanalytics)" [options]="viaAnalytics" [(ngModel)]="selectedVIAanalytics" itemSize="30" ></p-dropdown>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="position: relative;top: 25px;text-align: center;width: 100%;">
+      <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" style="margin-top: 0.5%;">
+        <h6 *ngIf="chartTitle">{{chartTitle}}</h6>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12">
+        <div *ngIf="showchart" style="min-height: 300px;">
+          <ngx-bar-chart-via [data]="data "></ngx-bar-chart-via>
+        </div>
+        <div *ngIf="!showchart" style="text-align: center;min-height: 300px;margin-top: 10%;">
+          <p style="font-weight: 600;" i18n>No Data to Show</p>
+        </div>
+        
+      </div>
+</div>
+
+</nb-card-body>
+<nb-card>

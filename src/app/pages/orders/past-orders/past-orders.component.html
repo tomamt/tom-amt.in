@@ -1,0 +1,72 @@
+<nb-card>
+    <nb-card-header>
+        <span i18n>Past Orders</span>
+        <div style="margin-top: -3%;text-align: end;font-weight: 500;" >
+            <div >
+                <span i18n>Orders with Issues</span>&nbsp; 
+                <div style="background-color:#d2747438;width: 1vw;height: 1vw;float: right;margin-top: 5px;border: solid #000;border-width: 1px 1px;"></div>
+            </div> 
+            <div >
+                <span i18n>Delivery Time Exceeded</span>&nbsp; 
+                <div style="background-color:#ffffe0;width: 1vw;height: 1vw;float: right;margin-top: 5px;border: solid #000;border-width: 1px 1px;"></div>
+            </div>
+        </div>
+    </nb-card-header>
+    <nb-card-body>
+        <form class="example"  style="max-width:200px;margin: -1% 0px 0px 82%;">
+            <input type="text" i18n-placeholder placeholder="Search Order ID" name="search2" [(ngModel)]="searchField" style="background: #ffffff;" class="searchfield">
+            <button type="submit" class="searchfield" (click)="search()"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="container">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr style="text-align: center;">
+                            <th (click)="sort('_id')" style="font-weight: bold;"><span i18n>Order ID</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='_id'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('createdDate')" style="font-weight: bold;"><span i18n>Order Placed</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='createdDate'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('status')" style="font-weight: bold;"><span i18n>Status</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='status'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            
+                            <th (click)="sort('totalAmount')" style="font-weight: bold;"><span i18n>Amount</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='totalAmount'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('genre')" style="font-weight: bold;"> <span i18n>Terminal</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='genre'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('deliveryAreaName')" style="font-weight: bold;"> <span i18n>Delivery Location</span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='deliveryAreaName'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                            <th (click)="sort('actions')" style="font-weight: bold;"><span i18n></span>
+                                <span class="glyphicon sort-icon" *ngIf="key =='actions'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orderListAll | orderBy: key : !reverse ; let i = index" [ngClass]="{'dateover' : order.expectedDeliveryTime<currentDateTime, 'row-alert':order.issues}">
+                            <td>{{order.orderId}}</td>
+                            <td style="text-transform: lowercase;">{{order.createdDate | date:'hh:mma MM/dd/yy'}}</td>
+                            <td style="text-transform: capitalize;">{{order.status}}</td>
+                           
+                            <td><b>{{currency}}</b>{{order.totalAmount | number : '1.2-2' }}</td>
+                            <td>{{order.deliveryAreaName}}</td>
+                            <td>{{order.deliveryLocationName}}</td>
+                            <td style="text-align: center;"><i class="fa fa-eye" i18n-title title="View Order Details" style="font-size:25px;cursor: pointer;" (click)="editorder(order)"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="margin-left:35%;" *ngIf="orderListAll.length>0">
+                    <ngx-paginate  [page]="page" [options]="defaults" (pageChange)='setPage($event)'></ngx-paginate>
+                </div>
+                <div style="margin-left:40%;"  *ngIf="orderListAll.length==0" i18n>
+                    No records found
+                </div>
+            </div>
+        </div>
+       
+    </nb-card-body>
+</nb-card>

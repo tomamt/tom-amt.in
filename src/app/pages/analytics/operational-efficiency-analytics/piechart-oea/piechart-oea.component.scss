@@ -1,0 +1,42 @@
+
+::ng-deep .piecharttttooltip {
+  position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: white;
+    color: black;
+    border: 0px;
+    border-radius: 1px;
+    pointer-events: none;
+    vertical-align: middle;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+::ng-deep .pie-legend{
+  transform: translate(-175px, -100px) !important;
+}
+#chart-legend {
+  width:116px;
+  padding:10px;
+
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.legend-value {
+  margin-bottom:15px;
+  display:flex;
+  align-items:center;
+}
+
+.legend-block {
+  min-width: 15px;
+  height: 15px;
+  margin-right:10px;
+ 
+  background-color:#D3D3D3;
+}
+

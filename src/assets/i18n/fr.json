@@ -1,0 +1,16 @@
+{
+    "languageTitle" : "Choisir la langue",
+    "welcomeTitle" : "Bienvenue dans l'équipe GRAMMI!",
+    "selecttitle" : "Sélectionnez un élément de menu pour commencer.",
+    "thankstitle" : "Sélectionnez un élément de menu pour commencer.",
+    "pleasetitle" : "Veuillez vous connecter à l'application mobile ou tablette pour commencer.",
+    "signIn" : "Connexion à l'équipe GRAMMI",
+    "date" : "Date",
+    "Message" : "Message",
+    "Reporter" : "Journaliste",
+    "Status" : "Status",
+    "Manage" : "Statut",
+    "Manage_Issue" : "Gérer le problème",
+    "No_records_found" : "Aucun enregistrement trouvé",
+    "Order_ID" : "numéro de commande"
+}

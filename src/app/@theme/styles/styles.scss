@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+// themes - our custom or/and out of the box themes
+@import 'themes';
+@import '~ngx-ui-switch/ui-switch.component.scss';
+// framework component themes (styles tied to theme variables)
+@import '~@nebular/theme/styles/globals';
+@import '~@nebular/auth/styles/all';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+
+// loading progress bar theme
+@import './pace.theme';
+
+@import './layout';
+@import './overrides';
+
+// install the framework and custom global styles
+@include nb-install() {
+
+  // framework global styles
+  @include nb-theme-global();
+  @include nb-auth-global();
+
+  @include ngx-layout();
+  // loading progress bar
+  @include ngx-pace-theme();
+
+  @include nb-overrides();
+};
+.nb-theme-default ng2-smart-table table tr th, .nb-theme-default ng2-smart-table table tr td {
+  position: relative;
+  padding: 0.675rem 1.25rem !important;
+  border: 1px solid #edf1f7;
+  vertical-align: middle;
+}
+::ng-deep .ngx-pagination   li:not(:last-child) {
+  border-right: 1px solid #edf1f7;
+}
+::ng-deep .ngx-pagination   {
+  border: 1px solid #edf1f7;
+}
+.ngx-pagination .current {
+  padding: 0.1875rem 0.625rem;
+  background: #2199e8;
+  color: #fefefe;
+  cursor: default;
+}
+::ng-deep .page-selection .page-entry.active {
+  color: #fff !important;
+  background-color: #3366ff !important;
+  cursor: default !important;
+  padding: .75rem 1.25rem !important;
+  border: none ;
+  height: auto !important;
+}
+::ng-deep .page-selection .page-entry {
+height: auto !important;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+border: none !important;
+background-color: #fff ;
+margin: 0 0px !important;
+cursor: pointer !important;
+white-space: nowrap !important;
+min-width: 14px !important;
+width: auto !important;
+padding: .75rem 1.25rem  !important;
+color:#3366ff ;
+}
+
+.pace.pace-active {
+    display: none;
+}
+
+th.ng2-smart-th {
+  text-align: center;
+}
+a.ng2-smart-sort-link.sort.ng-star-inserted {
+  font-weight: bold;
+}
+.ng2-smart-title {
+  font-weight: bold;
+}
+table-cell-view-mode.ng-star-inserted {
+  text-align: left;
+}
+ng2-smart-table-filter input.form-control.ng-untouched.ng-pristine.ng-valid {
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+::ng-deep .ui-picklist-target-controls.ui-picklist-buttons.ng-star-inserted {
+    display: none;
+}
+
+::ng-deep .ui-picklist-source-controls.ui-picklist-buttons.ng-star-inserted {
+    display: none;
+}
+
+::ng-deep button[icon="pi pi-angle-double-right"] {
+    display: none !important;
+}
+::ng-deep button[icon="pi pi-angle-double-left"] {
+    display: none !important;
+}

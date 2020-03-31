@@ -1,0 +1,392 @@
+<nb-card>
+	<nb-card-header>
+    <a style="cursor: pointer;" (click)="previousPage()" i18n>Ratings</a> <span i18n>/ View Rating</span>
+	</nb-card-header>
+	<nb-card-body>
+	   <mat-tab-group *ngIf="orderdetails">
+		  <mat-tab label="Order Details">
+        <div class="orderheading" style="text-align: center;" ><b i18n>Order Details</b></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div style="border: 1px solid #d5e0eb;">
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label"> i18nOrder ID:</label>
+                <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    {{orderdetails.orderId}}
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Order Status:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                        {{orderdetails.status}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Customer Name:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      {{orderdetails.recipientName}}
+                    </div>
+                </div>
+              </div>
+              
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Contact Number:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.recipientPhoneNumber}}
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+
+            <div style="border: 1px solid #d5e0eb;">
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Order Placed:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: lowercase;">
+                        {{orderdetails.createdDate | date:'hh:mma MM/dd/yy'}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Expected Delivery Time:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: lowercase;">
+                        {{orderdetails.expectedDeliveryTime | date:'hh:mma MM/dd/yy'}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Agent Name:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" *ngIf="orderdetails.assignee">
+                        {{orderdetails.assignee.name}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Agent Email:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail" *ngIf="orderdetails.assignee">
+                        {{orderdetails.assignee.email}}
+                      </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+         
+          <div class="col-sm-6">
+            <div class="orderheading" style="text-align: center;"><b i18n>Payment Details</b></div>
+            <div style="border: 1px solid #d5e0eb;">
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Payment Status:</label>
+                <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{orderdetails.paymentStatus}}
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Payment Method:</label>
+                <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail" style="text-transform: capitalize;">
+                    {{orderdetails.paymentMethod}}
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Packing Amount:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <b>{{currency}}</b>{{orderdetails.packingCharge | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Amount:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <b>{{currency}}</b>{{orderdetails.deliveryCharge | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                  <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Discount Amount:</label>
+                  <div class="col-sm-7">
+                      <div type="text" class="form-control-plaintext" id="staticEmail">
+                        <b>{{currency}}</b>{{orderdetails.discountAmount | number : '1.2-2' }}
+                        </div>
+                  </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                  <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Tax Percentage:</label>
+                  <div class="col-sm-7">
+                      <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.tax}}
+                        </div>
+                  </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                  <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Tax Amount:</label>
+                  <div class="col-sm-7">
+                      <div type="text" class="form-control-plaintext" id="staticEmail">
+                        <b>{{currency}}</b>{{orderdetails.taxAmount | number : '1.2-2' }}
+                        </div>
+                  </div>
+              </div>
+                
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Sub Total:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <b>{{currency}}</b>{{orderdetails.subTotal | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Total Amount:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <b>{{currency}}</b>{{orderdetails.totalAmount | number : '1.2-2' }}
+                      </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <div class="orderheading" style="text-align: center;"><b i18n>Vendor Details</b></div>
+            <div style="border: 1px solid #d5e0eb;">
+
+                <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Vendor Name:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.name}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Vendor Email:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.email}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Phone Number:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.phoneNumber}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>License:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.license}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Tax ID:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.taxId}}
+                      </div>
+                </div>
+              </div>
+                
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Cuisine:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.cuisineType}}
+                      </div>
+                </div>
+              </div>
+                
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Airport:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.vendorId.venueId.name}}
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Terminal:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        {{orderdetails.deliveryAreaName}}
+                      </div>
+                </div>
+              </div>
+
+                <div class="form-group row form-group2" style="margin-bottom: 0;">
+                  <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Delivery Location:</label>
+                  <div class="col-sm-7">
+                      <div type="text" class="form-control-plaintext" id="staticEmail">
+                          {{orderdetails.deliveryLocationName}}
+                        </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+		  </mat-tab>
+		  <mat-tab label="Item Details">
+        <div class="orderheading" style="text-align: center;" ><b i18n>Item Details</b></div>
+          <div class="col-sm-12 itemheading"  *ngIf="orderdetails.menuItem && orderdetails.menuItem.length>0">
+            <div style="border: 1px solid #d5e0eb;">
+              <div class="form-group row form-group2">
+                
+                <label for="staticEmail" class="col-sm-4 col-form-label" i18n>Item Name:</label>
+                <label for="staticEmail" class="col-sm-4 col-form-label" i18n>Price:</label>
+                <label for="staticEmail" class="col-sm-4 col-form-label" i18n>Quantity:</label>
+              </div>
+              <div class="form-group row" [ngClass]="{'form-group2forloop': i!=(orderdetails.menuItem.length)-1}" *ngFor="let menuItem of orderdetails.menuItem; let i = index">
+                  
+                  <div class="col-sm-4">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <div *ngIf="menuItem.menuItemId">{{menuItem.menuItemId.name}}</div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-sm-4">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        <div *ngIf="menuItem.menuItemId"><b>{{currency}}</b>{{menuItem.menuItemId.price | number}}</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <div type="text" class="form-control-plaintext" id="staticEmail">
+                          <div *ngIf="menuItem.menuItemId">{{menuItem.quantity}}</div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+		  </mat-tab>
+		  <mat-tab label="Issues Reported"  > 
+        <div class="orderheading" style="text-align: center;" ><b i18n>Issues Reported</b></div>
+        <div class="col-sm-12 itemheading" *ngIf="orderdetails.issues && orderdetails.issues.length>0" >
+          <div style="border: 1px solid #d5e0eb;">
+            <div class="form-group row form-group2">
+              
+              <label for="staticEmail" class="col-sm-3 col-form-label" i18n>Status</label>
+              <label for="staticEmail" class="col-sm-3 col-form-label" i18n>Action</label>
+              <label for="staticEmail" class="col-sm-3 col-form-label" i18n>Type</label>
+              <label for="staticEmail" class="col-sm-3 col-form-label" i18n>Date</label>
+            </div>
+            <div class="form-group row" [ngClass]="{'form-group2forloop': i!=(orderdetails.issues.length)-1}" *ngFor="let issues of orderdetails.issues; let i = index" style="text-transform: capitalize;">
+                
+                <div class="col-sm-3">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    <div *ngIf="issues.status">{{issues.status}}</div>
+                  </div>
+                  
+                </div>
+                <div class="col-sm-3">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <div *ngIf="issues.actions">{{issues.actions}}</div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                        <div *ngIf="issues.type">{{issues.type}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <div *ngIf="issues.type" style="text-transform: lowercase;">{{issues.reportedDate | date:'hh:mma MM/dd/yy'}}</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!orderdetails.issues" style="text-align: center;">
+          <span i18n>No data to display</span>
+        </div>
+		  </mat-tab>
+		  <mat-tab label="Ratings">
+        <div class="orderheading" style="text-align: center;" ><b i18n>Rating</b></div>
+        <div class="row" *ngIf="orderdetails.ratings">
+          <div class="col-sm-12">
+            <div style="border: 1px solid #d5e0eb;">
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Rating:</label>
+                <div class="col-sm-7">
+                  <div type="text" class="form-control-plaintext" id="staticEmail">
+                    <span class="fa fa-star " [ngClass]="{'checked':orderdetails.ratings.experienceRating>0}"></span>
+                    <span class="fa fa-star" [ngClass]="{'checked':orderdetails.ratings.experienceRating>1}"></span>
+                    <span class="fa fa-star" [ngClass]="{'checked':orderdetails.ratings.experienceRating>2}"></span>
+                    <span class="fa fa-star" [ngClass]="{'checked':orderdetails.ratings.experienceRating>3}"></span>
+                    <span class="fa fa-star" [ngClass]="{'checked':orderdetails.ratings.experienceRating>4}"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row form-group2" style="margin-bottom: 0;">
+                <label for="staticEmail" class="col-sm-5 col-form-label" i18n>Comment:</label>
+                <div class="col-sm-7">
+                    <div type="text" class="form-control-plaintext" id="staticEmail">
+                      <span *ngIf="orderdetails.ratings.experienceRating=='3'" i18n>Okey</span>
+                      <span *ngIf="orderdetails.ratings.experienceRating=='4'" i18n>Good</span>
+                      <span *ngIf="orderdetails.ratings.experienceRating=='5'" i18n>Wow!</span>
+                      <span *ngIf="orderdetails.ratings.comment && (orderdetails.ratings.experienceRating=='1' || orderdetails.ratings.experienceRating=='2')">{{orderdetails.ratings.comment}}</span> 
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+         
+        </div>
+        <div *ngIf="!orderdetails.ratings" style="text-align: center;">
+          <span i18n>No data to display</span>
+        </div>
+
+		  </mat-tab>
+	   </mat-tab-group>
+	</nb-card-body>
+ </nb-card>

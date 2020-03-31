@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr style="text-align: center;">
+                    <th (click)="sort('reportedDate')" style="font-weight: bold;" ><span i18n>Date</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='reportedDate'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('comment')" style="font-weight: bold;" ><span i18n>Message</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='comment'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('genre')" style="font-weight: bold;" ><span i18n>Voice Note</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='genre'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('reporter')" style="font-weight: bold;" ><span i18n>Reporter</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='reporter'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('orderId')" style="font-weight: bold;" ><span i18n>Order ID</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='orderId'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('status')" style="font-weight: bold;" ><span i18n>Status</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='status'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th (click)="sort('total')" style="font-weight: bold;" ><span i18n>Action</span>
+                        <span class="glyphicon sort-icon" *ngIf="key =='total'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let crew of CrewIssueList | orderBy: key : !reverse ; let i = index" [ngClass]="{'closed' : crew.status=='closed' }">
+                    <td style="text-transform: lowercase;width: 16%;">{{crew.reportedDate | date:'hh:mma MM/dd/yy'}}</td>
+                    <td style="width: 16%;">
+                        <span *ngIf="crew.comment" title="{{crew.comment}}">
+                            {{ (crew.comment.length>20)? (crew.comment | slice:0:20)+'...':(crew.comment) }}
+                        </span>
+                        <span *ngIf="!crew.comment"  i18n>
+                            No message
+                        </span>
+                    </td>
+                    <td style="width: 16%;">
+                        <span *ngIf="crew.voiceRecordingId" >
+                            <audio controls style="width: 100%;">
+                                <source src="{{crew.voiceRecordingId.url}}">
+                            </audio>
+                        </span>
+                        <span *ngIf="!crew.voiceRecordingId"  i18n>
+                            No voice note
+                        </span>
+                    </td>
+                    <td style="width: 16%;"><div *ngIf="crew.reporter">{{crew.reporter.name}}</div></td>
+                    <td style="width: 16%;"><div *ngIf="crew.orderId">{{crew.orderId.orderId}}</div></td>
+                    <td style="text-transform: capitalize;width: 16%;">{{crew.status}} : {{crew.actions}}</td>
+                    <td style="text-align: center;width: 16%;">
+                        <i class="fa fa-eye" i18n-title title="Manage Issue" style="font-size:25px;cursor: pointer;" (click)="addButton(crew)"></i>    
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-left:35%;" *ngIf="CrewIssueList.length!=0">
+            <ngx-paginate [page]="page" [options]="defaults" (pageChange)='setPage($event)'></ngx-paginate>
+        </div>
+        <div style="margin-left:40%;"  *ngIf="CrewIssueList.length==0"  i18n>
+            No records found
+        </div>
+    </div>
+</div>

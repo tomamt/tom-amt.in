@@ -1,0 +1,55 @@
+::ng-deep  input-filter.ng-star-inserted:after {
+    content: "\f002";
+    margin-bottom: -2pc !important;
+    font-family: FontAwesome;
+    margin-left:5pc !important;
+    position: relative;
+    top: -27px;
+   
+    color: #999 !important;
+    display: inline-flex;
+    float: right;
+    margin-right: 6PX; 
+}
+::ng-deep .ng2-smart-actions .vendors{
+    width: 20% !important;
+}
+body{margin-top:20px;}
+
+
+.orderheading{
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.itemheading{
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+.row {
+    margin-top:10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.form-group2{
+    border-bottom: 1px dotted #D5E4F1;
+    
+}
+.form-group2forloop{
+    margin-bottom: 0;
+    border-bottom: 1px dotted #D5E4F1;
+}
+.col-form-label{
+    color: #667E99;
+}
+
+.checked {
+    color: orange;
+    background-color: unset !important;
+  }
+
+  label.col-sm-5.col-form-label {
+    max-width: 38.2%;
+}

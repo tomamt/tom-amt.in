@@ -1,0 +1,220 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: #f7f9fc,
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), default, default);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: #252547,
+  slide-out-shadow-color: 2px 0 3px #29157a,
+  slide-out-shadow-color-rtl: -2px 0 3px #29157a,
+), cosmic, cosmic);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #edf1f7 0%, #e4e9f2 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), corporate, corporate);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), dark, dark);
+
+::ng-deep .nb-theme-default nb-sidebar .main-container { 
+  width: 14rem;
+}
+
+
+::ng-deep .nb-theme-default nb-sidebar {
+  width: 14rem;
+}
+
+::ng-deep nb-layout-column {
+  padding: 2px !important;
+  
+}
+
+::ng-deep .nb-theme-default nb-layout .layout {
+  font-family: Roboto !important;
+}
+::ng-deep .nb-theme-default nb-menu .menu-group, .nb-theme-default nb-menu .menu-item a {
+  font-family: Roboto !important;
+}
+::ng-deep .nb-theme-default nb-user .user-name {
+  font-family: Roboto !important;
+}
+::ng-deep .nb-theme-default ng2-smart-table table tr th, .nb-theme-default ng2-smart-table table tr th a {
+  font-family: Roboto !important;
+}
+
+
+
+::ng-deep ngx-profile.ng-star-inserted {
+  height: 100% !important;
+  }
+  ::ng-deep ngx-tables.ng-star-inserted {
+  height: 100% !important;
+  }
+  ::ng-deep nb-card{
+  height: 100% !important;
+  }
+  
+  ngx-smart-table.ng-star-inserted{
+  height: 100% !important;
+  
+  }
+  ::ng-deep ngx-menu.ng-star-inserted{
+  height: 100% !important;
+  
+  }
+
+  ::ng-deep .nb-theme-default nb-menu .menu-item a.active{
+    color: #67E0F0 !important;
+  }
+  ::ng-deep .nb-theme-default nb-menu .menu-item a:hover .menu-icon {
+    color: #67E0F0 !important;
+  } 
+  ::ng-deep .nb-theme-default nb-menu .menu-item > .menu-items > .menu-item a:hover {
+    color: #67E0F0 !important;
+  }
+  ::ng-deep .nb-theme-default a:hover {
+    color: #67E0F0 !important;
+  }
+  ::ng-deep body .ui-button {
+    background-color: #67E0F0;
+    border: 1px solid #67E0F0;
+  }
+  ::ng-deep body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight, body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group.ui-state-highlight {
+    background-color: #67E0F0;
+  }
+  ::ng-deep body .ui-dropdown-panel .ui-dropdown-filter-container .ui-dropdown-filter-icon {
+    color: #67E0F0;
+  } 
+  ::ng-deep body .ui-inputtext:enabled:focus:not(.ui-state-error) {
+    border-color: #67E0F0;
+  }
+  ::ng-deep .nb-theme-default ng2-smart-table nav.ng2-smart-pagination-nav .pagination li.active > span{
+    background-color: #67E0F0;
+  }
+  ::ng-deep .nb-theme-default ng2-smart-table nav.ng2-smart-pagination-nav .pagination li a{
+    color: #67E0F0;
+  }
+
+  ::ng-deep .nb-theme-default ng2-smart-table th.ng2-smart-actions-title-add a {
+    border-color: #67E0F0;
+    background-color: #67E0F0;
+  }
+  ::ng-deep .btn-success {
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .btn-success:not(:disabled):not(.disabled):active{
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .inputfile-1[_ngcontent-msu-c13]:focus + label[_ngcontent-msu-c13], .inputfile-1.has-focus[_ngcontent-msu-c13] + label[_ngcontent-msu-c13], .inputfile-1[_ngcontent-msu-c13] + label[_ngcontent-msu-c13]:hover {
+    background-color: #67E0F0;
+  }
+  ::ng-deep .btn-success:hover {
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .btn-outline-primary {
+    color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .btn-outline-primary:hover {
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .md-drppicker .btn {
+    background-color: #67E0F0 !important;
+  }
+  ::ng-deep .btn-link {
+    color: #67E0F0 !important;
+  }
+  ::ng-deep .btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .btn-primary {
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep .btn-primary:hover {
+    background-color: #67E0F0;
+    border-color: #67E0F0;
+  }
+  ::ng-deep  .nb-theme-default nb-layout .layout {
+    background-color: #ffffff;
+  }
+  ::ng-deep .nb-theme-default nb-layout.window-mode {
+    background: #ffffff;
+  }

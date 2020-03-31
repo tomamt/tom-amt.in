@@ -1,0 +1,25 @@
+::ng-deep nb-auth nb-card {
+    background-image: url("/assets/images/background.png");
+    height: calc(100vh) !important;
+}
+
+::ng-deep nb-auth nb-card-header {
+    
+    display: none;
+}
+::ng-deep nb-layout-column {
+    padding: 0 !important;
+}
+.title {
+    color: white;
+    font-weight: 400;
+    font-family: Roboto;
+}
+.status-primary {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #616161 !important;
+    width: 25% !important;
+    height: 29px !important;
+    padding: 0 !important;
+}  

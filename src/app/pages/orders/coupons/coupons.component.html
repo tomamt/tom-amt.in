@@ -1,0 +1,11 @@
+<nb-card>
+  <nb-card-header i18n>
+    Manage Coupons
+  </nb-card-header>
+  
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" 
+    (create)="addButton($event)" (delete)="deleteButton($event)" (edit)="editButton($event)">
+    </ng2-smart-table> 
+  </nb-card-body>
+</nb-card>

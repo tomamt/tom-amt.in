@@ -1,0 +1,150 @@
+<nb-card-header i18n>Manage Problem</nb-card-header>
+  <nb-card-body>
+    <i style="float: right;font-size: 20px;cursor: pointer;" (click)="close()" class="fas fa-times-circle"></i>
+    <div class="lists row">
+        <div class="col-md-12 col-lg-6 col-xxxl-6">
+            <nb-card class="list-card">
+                <nb-card-header style="text-align: center;" i18n>Problem Details</nb-card-header>
+                <nb-card-body>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;">
+                        <div style="width: 25%;"><b i18n>Type:</b></div>
+                        <div style="text-transform: capitalize;">{{issueData.type}}</div>
+                    </div>
+                    
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.comment">
+                        <div style="width: 25%;"><b i18n>Message:</b></div>
+                        <div class="m_title">
+                            {{issueData.comment}}
+                        </div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.orderProblemId && issueData.orderProblemId.displayName">
+                        <div style="width: 25%;"><b i18n>Details:</b></div>
+                        <div class="m_title">
+                            {{issueData.orderProblemId.displayName}}
+                        </div>
+                    </div>
+                    <div style="display: flex;padding: 5px  0px 5px 0px;">
+                        <div style="width: 25%;"><b i18n>Date:</b></div>
+                        <div style="text-transform: lowercase;">{{issueData.reportedDate | date:'hh:mma MM/dd/yy'}}</div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.reporter && issueData.reporter.name">
+                        <div style="width: 25%;"><b i18n>Reporter:</b></div>
+                        <div>{{issueData.reporter.name}}</div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.orderId && issueData.orderId.orderId">
+                        <div style="width: 25%;"><b i18n>Order ID:</b></div>
+                        <div>{{issueData.orderId.orderId}}</div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;">
+                        <div style="width: 25%;"><b i18n>Status:</b></div>
+                        <div style="text-transform: capitalize;">{{issueData.status}}</div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;">
+                        <div style="width: 25%;"><b i18n>Action:</b></div>
+                        <div style="text-transform: capitalize;">{{issueData.actions}}</div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.orderId && issueData.orderId.totalAmount">
+                        <div style="width: 25%;"><b i18n>Amount:</b></div>
+                        <div style="text-transform: capitalize;">
+                            <b>{{currency}}</b>{{issueData.orderId.totalAmount | number : '1.2-2' }}
+                        </div>
+                    </div>
+                    <div style="display: flex;padding: 5px 0px 5px 0px;" *ngIf="issueData.type == 'crew-issue' && issueData.voiceRecordingId">
+                        <div style="width: 25%;margin-top: 5%;"><b i18n>Audio:</b></div>
+                        <div style="width: 100%;">
+                            <audio controls style="width: 100%;">
+                                <source src="{{issueData.voiceRecordingId.url}}">
+                            </audio>
+                        </div>
+                    </div>
+                </nb-card-body>
+            </nb-card>
+        </div>
+        <div class="col-md-12 col-lg-6 col-xxxl-6">
+            <nb-card class="list-card">
+                <nb-card-header style="text-align: center;" i18n>Actions</nb-card-header>
+                <nb-card-body style="text-align: center;">
+                    <div *ngIf="!partialRefundStatus">
+                        <div *ngIf="issueData.type == 'da-break' && issueData.status == 'open'">
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="manageQueue()" i18n>Manage Queue</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="cancelissue()" i18n>Close Issue</button>
+                        </div>
+                        <div *ngIf="issueData.type == 'consumer-issue' && issueData.status == 'open' && issueData.actions == 'pending'">
+                            <button class="cancel" nbButton status="danger" (click)="cancelandrefund()" i18n>Close Issue & Refund</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="partialRefund()" i18n>Close Issue & Partial Refund</button>
+                        </div>
+                        <div *ngIf="issueData.type == 'crew-issue' && issueData.status == 'open' && issueData.actions == 'pending'">
+                            <button class="cancel" nbButton status="danger" (click)="cancelissue()" i18n>Cancel Order</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="cancelandrefund()" i18n>Cancel & Refund</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="partialRefund()" i18n>Cancel & Partial Refund</button>
+                        </div>
+                        <div *ngIf="issueData.type == 'da-issue' && issueData.status == 'open' && issueData.actions == 'pending'">
+                            <button class="cancel" nbButton status="danger" (click)="cancelissue()" i18n>Cancel Order</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="cancelandrefund()" i18n>Cancel & Refund</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="partialRefund()" i18n>Cancel & Partial Refund</button>
+                        </div>
+                        <div *ngIf="issueData.type == 'da-unavailable' && issueData.status == 'open'">
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="manageQueue()" i18n>Manage Queue</button>
+                            <br>
+                            <br>
+                            <button class="cancel" nbButton status="danger" (click)="cancelissue()" i18n>Cancel Order</button>
+                        </div>
+                        <div *ngIf="issueData.status == 'closed'">
+                            <br>
+                            <br> <span i18n>Issue is</span> <span style="text-transform: capitalize;">{{issueData.status}}</span>
+                            <br>
+                            <br> <span i18n>Status is</span> <span style="text-transform: capitalize;">{{issueData.actions}}</span>
+                        </div>
+                    </div>
+                    <div *ngIf="partialRefundStatus">
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Discount Amount:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.discountAmount | number : '1.2-2' }}</div>
+                        </div>
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Delivery Charge:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.deliveryCharge | number : '1.2-2' }}</div>
+                        </div>
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Packing Charge:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.packingCharge | number : '1.2-2' }}</div>
+                        </div>
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Tax Amount:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.taxAmount | number : '1.2-2' }}</div>
+                        </div>
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Sub Total:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.subTotal | number : '1.2-2' }}</div>
+                        </div>
+                        <div style="display: flex;padding: 5px 0px 5px 0px;">
+                            <div style="width: 50%;"><b i18n>Total Amount:</b></div>
+                            <div style="text-transform: capitalize;"> <b>{{currency}}</b>{{issueData.orderId.totalAmount | number : '1.2-2' }}</div>
+                        </div>
+                        <br>
+                        <input (keypress)="numberOnly2($event)" type="number" placeholder="Enter the amount to be refunded" class="form-control" id="stuff" [(ngModel)]="partialAmount">
+                        <label for="stuff" class=" input-icon">{{currency}}</label>
+                        <br>
+                        <button class="cancel" nbButton status="danger" (click)="partialRefundAmount()" i18n>Submit</button>
+                    </div>
+                </nb-card-body>
+            </nb-card>
+        </div>
+    </div>
+  </nb-card-body>

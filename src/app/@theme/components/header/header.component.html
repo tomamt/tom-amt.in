@@ -1,0 +1,31 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo"  (click)="navigateHome()">
+      <span style="cursor: pointer;">GRAMMI</span>
+    </a>
+  </div>
+</div>
+<mat-form-field>
+  <mat-label>{{ 'languageTitle' | translate }}</mat-label>
+  <mat-select [(value)]="selected" (selectionChange)="useLanguage(selected)">
+    <mat-option value="en">English</mat-option>
+    <mat-option value="fr">French</mat-option>
+  </mat-select>
+</mat-form-field>
+<div class="header-container">
+    <ui-switch *ngIf="UserRole == 'vendor' " checkedLabel="Offline" uncheckedLabel="Online" style="margin-left: 32px;" size="small" [(ngModel)]="renderValue" [beforeChange]="OnBeforeChange" (change)="onChange($event)"></ui-switch>
+  <nb-actions size="small">
+    <nb-action class="user-action" *ngIf="auth.userProfile$ | async as profile">
+      <nb-user [nbContextMenu]="userMenu"
+               [onlyPicture]="userPictureOnly"
+               [name]="profile?.name"
+               [picture]="profile?.picture" (menuClick)="onMenuItemClick($event)">
+      </nb-user> 
+      
+    </nb-action>
+    
+  </nb-actions>
+</div>

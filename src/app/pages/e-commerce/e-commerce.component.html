@@ -1,0 +1,13 @@
+<nb-card >
+  <nb-card-body style="min-height: 83vh;"> 
+    <div style="position: sticky;top: 40%;text-align: center;" *ngIf="enableDashbaord">
+      <h5 style="color: #67E0F0;" i18n>{{ 'welcomeTitle' | translate }}</h5> 
+      <p><b i18n>{{ 'selecttitle' | translate }}</b></p>
+    </div>
+    <div style="position: sticky;top: 40%;text-align: center;" *ngIf="!enableDashbaord">
+      <h5 style="color: #67E0F0;" i18n>{{ 'thankstitle' | translate }}</h5> 
+      <p><b i18n>{{ 'pleasetitle' | translate }}</b></p>
+    </div>
+    
+  </nb-card-body> 
+</nb-card>

@@ -1,0 +1,59 @@
+<nb-card>
+  <nb-card-header  i18n>
+    GRAMMI Productivity Analytics
+  </nb-card-header>
+  <nb-card-body style="text-align: center;min-height: 523px;">
+      <div class="row" style="background: white;">
+          <div class="col-xxxl-1 col-xxl-1 col-lg-1 col-md-1" style="margin-top: 0.5%;text-align: right;" i18n>
+              Terminal:
+          </div>
+          <div class="col-xxxl-2 col-xxl-2 col-lg-2 col-md-2">
+              <div>
+                  <p-dropdown filter="true" i18n-placeholder placeholder="Select Terminal" (onChange)="vendorTerminal(selectedTerminal)" [options]="terminalList" [(ngModel)]="selectedTerminal" itemSize="30"></p-dropdown>
+              </div>
+          </div>
+          <div class="col-xxxl-2 col-xxl-2 col-lg-2 col-md-2" style="margin-top: 0.5%;text-align: right;" i18n>
+              Date Range:
+          </div>
+          <div class="col-xxxl-7 col-xxl-7 col-lg-7 col-md-7">
+              <div *ngIf="!datepickerChanges">
+                  <input type="text" style="width: 40%;" ngxDaterangepickerMd [(ngModel)]="selected" [alwaysShowCalendars]="alwaysShowCalendars" [linkedCalendars]="true" [locale]="{applyLabel: 'Done'}" (rangeClicked)="rangeClicked($event)" (datesUpdated)="datesUpdated($event)" [ranges]="ranges" [keepCalendarOpeningWithRange]="keepCalendarOpeningWithRange" class="form-control" placeholder="Please select date range" i18n-placeholder/>
+              </div>
+              <div *ngIf="datepickerChanges">
+                  <input [nbDatepicker]="datepicker" [(ngModel)]="dateGrouped" (ngModelChange)="onDateSelect($event)">
+                  <nb-datepicker #datepicker></nb-datepicker>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="row" style="position: relative;top: 25px;z-index: 1;left: 30px;width: 100%;">
+              <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" style="margin-top: 0.5%;">
+                  <h6 i18n>Average Delivery Time</h6>
+              </div>
+          </div>
+          <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" *ngIf="datagroupedChart">
+              <ngx-averagebar-chart-gpa [groupeddata]="datagrouped "></ngx-averagebar-chart-gpa>
+          </div>
+          <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" *ngIf="!datagroupedChart" style="height: 100px;top: 65px;left: 2%;"  i18n>
+              No data to show
+          </div>
+
+      </div>
+      <hr>
+      <div class="row">
+          <div class="row" style="position: relative;top: 25px;z-index: 1;left: 30px;width: 100%;">
+              <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" style="margin-top: 0.5%;">
+                  <h6 i18n>Average Time Between Deliveries</h6>
+              </div>
+          </div>
+          <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" *ngIf="fullFillementChart">
+              <ngx-averagebar-chart-gpa [groupeddata]="fullFillement "></ngx-averagebar-chart-gpa>
+          </div>
+          <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12" *ngIf="!fullFillementChart" style="height: 100px;top: 65px;left: 2%;" i18n>
+              No data to show
+          </div>
+
+      </div>
+
+  </nb-card-body>
+  <nb-card>

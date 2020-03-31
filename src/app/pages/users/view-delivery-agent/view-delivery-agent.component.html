@@ -1,0 +1,269 @@
+<nb-card>
+	<nb-card-header>
+		<a style="cursor: pointer;" (click)="previousPage()" i18n-title>Delivery Agents</a> <span i18n>/ Manage Delivery Agent</span>
+	</nb-card-header>
+	<nb-card-body>
+		<mat-tab-group #tabGroup [(selectedIndex)]="tabSelct">
+			<mat-tab label="Personal Information">
+				<div class="profile-user-info" *ngIf="userprofile">
+					<div class="profile-info-row">
+						<div class="profile-info-name"><span i18n>Name</span><span style="color: red;font-size: 18px;">*</span>: </div>
+						<div class="profile-info-value">
+							<input type="text" i18n-placeholder placeholder="Name" class="form-control" id="usr" [(ngModel)]="userprofile.name">
+						</div>
+					</div>
+					<div class="profile-info-row">
+						<div class="profile-info-name"><span i18n>Email</span><span style="color: red;font-size: 18px;">*</span>: </div>
+						<div class="profile-info-value">
+							<input readonly type="text" i18n-placeholder placeholder="Email" class="form-control" id="usr2" [(ngModel)]="userprofile.email">
+						</div>
+					</div>
+					<div class="profile-info-row">
+						<div class="profile-info-name"><span i18n>Status</span><span style="color: red;font-size: 18px;">*</span>: </div>
+						<div class="profile-info-value">
+							<span>
+								<select [(ngModel)]="userprofile.status" class="browser-default custom-select" placeholder="Select status">
+								<option selected value="" i18n>Select status</option>
+								<option *ngFor="let status of status;"  value="{{status.value}}">{{status.label}}</option>
+								</select>
+							</span>
+						</div>
+					</div>
+					<div class="profile-info-row">
+						<div class="profile-info-name"><span i18n>Phone Number</span><span style="color: red;font-size: 18px;">*</span>: </div>
+						<div class="profile-info-value"  *ngIf="agentDetails">
+							<span> <input (keypress)="numberOnly($event)" type="number" i18n-placeholder placeholder="Phone Number" class="form-control" id="usr" [(ngModel)]="agentDetails.phoneNumber" ></span>
+						</div>
+					</div>
+					<div class="profile-info-row">
+						<div class="profile-info-name"><span i18n>Employee ID</span><span style="color: red;font-size: 18px;">*</span>: </div>
+						<div class="profile-info-value" *ngIf="agentDetails">
+							<input type="text" i18n-placeholder placeholder="Employee ID" class="form-control" id="usr3" [(ngModel)]="agentDetails.empId">
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-10 offset-md-1 ">
+					<div class="row align-items-center justify-content-center mt-4">
+						<button type="button" class="btn btn-success" (click)="savedetails()" i18n>Save</button>
+						&nbsp;&nbsp;
+						<button type="button" class="btn btn-success" (click)="canceldetails()" style="background-color: #787e79;border-color: #787e79;" i18n>Cancel</button>
+					</div>
+				</div>
+			</mat-tab>
+			<mat-tab label="Historic Hours">
+				<div class="profile-user-info" *ngIf="userprofile">
+					<div class="profile-info-row">
+						<div class="profile-info-name"><b i18n>No Shows:</b></div>
+						<div class="profile-info-value">
+							{{noShowCount}}
+						</div>
+						<div class="profile-info-name"><b i18n>Total Hours:</b></div>
+						<div class="profile-info-value">
+							{{totalWorkingHours}}
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-12" >
+					<div class="col-xxxl-7 col-xxl-7 col-lg-7 col-md-7" style="float: left;left: 35%;">
+						<input type="text" i18n-placeholder placeholder="Select Date" ngxDaterangepickerMd [(ngModel)]="dateRange" class="form-control" style="width: 40%;"/>	
+					</div>
+					<div class="col-md-4" style="overflow: hidden;float: left;">
+						<button type="button" class="btn btn-success" (click)="filter()" i18n>Filter</button>
+					</div>
+					
+				</div>
+				<br><br>
+				<ng2-smart-table [settings]="settings" [source]="source" ></ng2-smart-table> 
+				<div class="col-md-10 offset-md-1 ">
+					<div class="row align-items-center justify-content-center mt-4">
+						<button type="button" class="btn btn-success" (click)="nexttab()" i18n>Next</button>
+					</div>
+				</div>
+			</mat-tab>
+			<mat-tab label="Actions">
+				<div class="col-md-10 offset-md-1 ">
+					<div class="row align-items-center justify-content-center mt-4">
+						<button type="button" class="btn btn-success" (click)="forceClockOut()" i18n>Force Clock Out</button>
+						&nbsp;&nbsp;
+						<button type="button" class="btn btn-success" (click)="registerNoShow()" i18n>Register No Show</button>
+					</div>
+				</div>	
+			</mat-tab>
+			
+			<mat-tab label="Queue">	
+				<div class="col-md-10 offset-md-1 " *ngIf="deliveryAgentCueentQueue.length">
+					<div class="row align-items-center justify-content-center mt-4" style="font-size: 20px;" i18n>
+						Current Order Queue
+					</div><br><br>
+				</div>
+				<div class="col-md-10 offset-md-1 " *ngIf="deliveryAgentCueentQueue">
+					<mat-accordion>
+						<mat-expansion-panel *ngFor="let panel of deliveryAgentCueentQueue">
+							<mat-expansion-panel-header>
+								<span i18n>Order ID:</span>&nbsp;<b>{{panel.orderId}}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span i18n>Delivery Terminal:</span>&nbsp;<b>{{panel.deliveryAreaName}}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span i18n>Delivery Location:</span>&nbsp;<b>{{panel.deliveryLocationName}}</b>
+							</mat-expansion-panel-header>
+							<div class="profile-user-info" >
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Order ID: </div>
+									<div class="profile-info-value">
+										{{panel.orderId}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Order Status: </div>
+									<div class="profile-info-value" style="text-transform: capitalize;">
+										{{panel.status}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Delivery Terminal: </div>
+									<div class="profile-info-value">
+										{{panel.deliveryAreaName}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Delivery Location: </div>
+									<div class="profile-info-value" >
+										{{panel.deliveryLocationName}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Vendor Name: </div>
+									<div class="profile-info-value" >
+										{{panel.vendorName}}
+									</div>
+								</div>
+								<div class="profile-info-row" *ngIf="panel.vendorId">
+									<div class="profile-info-name" style="width: 25%;" i18n>Vendor Email: </div>
+									<div class="profile-info-value" >
+										{{panel.vendorId.email}}
+									</div>
+								</div>
+								<div class="profile-info-row" *ngIf="panel.vendorId">
+										<div class="profile-info-name" style="width: 25%;" i18n>Vendor Phone Number: </div>
+										<div class="profile-info-value" >
+											{{panel.vendorId.phoneNumber}}
+										</div>
+									</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Order Placed: </div>
+									<div class="profile-info-value" style="text-transform: lowercase;">
+										{{panel.createdDate | date:'hh:mma MM/dd/yy'}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Expected Delivery Time: </div>
+									<div class="profile-info-value" style="text-transform: lowercase;">
+										{{panel.expectedDeliveryTime | date:'hh:mma MM/dd/yy'}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Payment Status: </div>
+									<div class="profile-info-value" style="text-transform: capitalize;">
+										{{panel.paymentStatus}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Payment Method: </div>
+									<div class="profile-info-value" style="text-transform: capitalize;">
+										{{panel.paymentMethod}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Customer Name: </div>
+									<div class="profile-info-value" >
+										{{panel.recipientName}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Customer Phone Number: </div>
+									<div class="profile-info-value">
+										{{panel.recipientPhoneNumber}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Discount Amount: </div>
+									<div class="profile-info-value" >
+										<b>{{currency}}</b>{{panel.discountAmount | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Packing Amount: </div>
+									<div class="profile-info-value" >
+										<b>{{currency}}</b>{{panel.packingCharge | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Delivery Amount: </div>
+									<div class="profile-info-value" >
+										<b>{{currency}}</b> {{panel.deliveryCharge | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Tax Percentage: </div>
+									<div class="profile-info-value" >
+										{{panel.tax}}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Tax Amount: </div>
+									<div class="profile-info-value" >
+										<b>{{currency}}</b>{{panel.taxAmount | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Sub Total: </div>
+									<div class="profile-info-value">
+										<b>{{currency}}</b>{{panel.subTotal | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Total Amount: </div>
+									<div class="profile-info-value" >
+										<b>{{currency}}</b> {{panel.totalAmount | number : '1.2-2' }}
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name" style="width: 25%;" i18n>Item Details: </div>
+									<div class="profile-info-value" >
+										<div class="col-sm-12 itemheading" style="text-align: center;right: 15px;">
+											<div style="border: 1px solid #d5e0eb;">
+												<div class="form-group row form-group2">
+													<label for="staticEmail" class="col-sm-3 col-form-label"><b i18n>Item Name</b></label>
+													<label for="staticEmail" class="col-sm-3 col-form-label"><b i18n>Price</b></label>
+													<label for="staticEmail" class="col-sm-3 col-form-label"><b i18n>Quantity</b></label>
+												</div>
+												<div class="form-group row" [ngClass]="{'form-group2forloop': i!=(panel.menuItem.length)-1}" *ngFor="let menuItem of panel.menuItem; let i = index">
+													
+													<div class="col-sm-3">
+														<span *ngIf="menuItem.menuItemId">{{menuItem.menuItemId.name}}</span>
+													</div>
+													<div class="col-sm-3" >
+														<span *ngIf="menuItem.menuItemId"><b>{{currency}}</b>{{menuItem.menuItemId.price | number : '1.2-2' }}</span>
+													</div>
+													<div class="col-sm-3" >
+														<span *ngIf="menuItem.quantity">{{menuItem.quantity}}</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+						</mat-expansion-panel>
+					</mat-accordion>
+				</div>
+				<div class="col-md-10 offset-md-1 " *ngIf="!deliveryAgentCueentQueue.length">
+					<div class="row align-items-center justify-content-center mt-4" style="font-size: 15px;" i18n>
+						No records found
+					</div><br><br>
+				</div>
+			</mat-tab>
+		</mat-tab-group>
+	</nb-card-body>
+</nb-card>

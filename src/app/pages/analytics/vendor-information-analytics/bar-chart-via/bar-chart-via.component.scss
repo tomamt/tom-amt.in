@@ -1,0 +1,49 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+// Colors
+$color-red: #ff6666;
+$color-white: #fff;
+$color-black: #2f2f2f;
+
+// Fonts
+$font-primary: Lato, sans-serif;
+ngx-bar-chart-via {
+    .bar {
+        fill: #00EEF0;
+    }
+    
+    .bar:hover {
+        fill: #09babb;
+    }
+    
+    .axis--x path {
+        display: none;
+    }
+}
+
+div.tooltip {
+	position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: white;
+    color: black;
+    border: 0px;
+    border-radius: 1px;
+    pointer-events: none;
+    vertical-align: middle;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  svg text.label {
+    fill: black;
+    font: 15px;
+    font-weight: 400;
+    text-anchor: middle;
+  }
+
+ 

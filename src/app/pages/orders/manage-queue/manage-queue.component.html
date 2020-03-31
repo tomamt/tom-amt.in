@@ -1,0 +1,39 @@
+<nb-card>
+  <nb-card-header>
+    <a style="cursor: pointer;" (click)="previousPage()" *ngIf="deliveryAgentValid" i18n>Manage Alerts / </a>  <span i18n>Manage Queue</span>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div style="width: 100%;position: relative;height: 25px;" *ngIf="agentDetails && deliveryAgentValid">
+        <div style="text-align: center;float: right;min-width: 145px;position: absolute;left: 110px;height: 27px;top: 18px;border-style: solid;border-width: 1px;border-color: #a6a6a6;">
+            {{agentDetails.name}}
+        </div>
+    </div>
+    <div style="width: 100%;position: relative;height: 25px;" *ngIf="assigneeList2 && !deliveryAgentValid">
+        <div style="float: right;width: 145px;position: absolute;left: 110px;top: 10px;z-index: 1;">
+            <p-dropdown filter="true" i18n-placeholder placeholder="Select Delivery Agent" (onChange)="orderListAssinee2(selectedassigneeList2)" [options]="assigneeList2" [(ngModel)]="selectedassigneeList2" itemSize="30"></p-dropdown>
+        </div>
+    </div>
+    <div style="width: 100%;position: relative;height: 25px;">
+        <div style="float: right;width: 145px;position: absolute;right: 141px;top: -15px;">
+            <p-dropdown filter="true" i18n-placeholder placeholder="Select Delivery Agent" (onChange)="orderListAssinee(selectedassigneeList)" [options]="assigneeList" [(ngModel)]="selectedassigneeList" itemSize="30"></p-dropdown>
+        </div>
+    </div>
+    
+    <p-pickList (onMoveToTarget)="assignOrder($event);" (onMoveToSource)="reassignOrder($event)" [source]="assigneeOrderList" [target]="targetCars" sourceHeader="Available" targetHeader="Selected" dragdrop="true"
+        [responsive]="true" [sourceStyle]="{'height':'300px'}" [targetStyle]="{'height':'300px'}"  
+        sourceFilterPlaceholder="Search by brand" >
+        <ng-template let-car pTemplate="item">
+            <div class="ui-helper-clearfix">
+               
+                <div style="font-size:14px;margin:15px 5px 0 0">{{car.deliveryAreaName}} - <span style="text-transform: lowercase;">{{car.modifedDate | date:'hh:mma'}}</span> - {{car.deliveryLocationName}} <span *ngIf="car.orderId">- {{car.orderId}}</span></div>
+            </div>
+        </ng-template>
+    </p-pickList>
+    <div style="text-align: center;margin-top: 3%;" *ngIf="deliveryAgentValid" >
+        <button class="btn btn-success" type="button" (click)="forceClockOut()" *ngIf="issueType=='da-break'" i18n>Force Clock Out</button>
+        <button class="btn btn-success" type="button" (click)="ok()" *ngIf="issueType=='da-unavailable'" i18n>OK</button>
+    </div>
+    
+  </nb-card-body>
+  <nb-card>

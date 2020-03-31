@@ -1,0 +1,79 @@
+::ng-deep  input-filter.ng-star-inserted:after {
+    content: "\f002";
+    margin-bottom: -2pc !important;
+    font-family: FontAwesome;
+    margin-left:5pc !important;
+    position: relative;
+    top: -27px;
+   
+    color: #999 !important;
+    display: inline-flex;
+    float: right;
+    margin-right: 6PX; 
+}
+
+::ng-deep  input-filter.ng-star-inserted:after {
+    content: "\f002";
+    margin-bottom: -2pc !important;
+    font-family: FontAwesome;
+    margin-left:5pc !important;
+    position: relative;
+    top: -27px;
+   
+    color: #999 !important;
+    display: inline-flex;
+    float: right;
+    margin-right: 6PX; 
+}
+::ng-deep .switch-small.switch-labeled.checked small {
+  left: 52px !important;
+}
+::ng-deep .switch-small.switch-labeled {
+  width: 70px !important;
+}
+::ng-deep .switch .off {
+  opacity: 1;
+  position: absolute;
+  right: 10%;
+  top: 0px !important;
+  z-index: 0;
+  color: #A9A9A9;
+  transition: 0.4s ease-out all;
+}
+::ng-deep .switch .on {
+  opacity: 1;
+  position: absolute;
+  right: 10%;
+  top: 0px !important;
+  z-index: 0;
+  color: #A9A9A9;
+  transition: 0.4s ease-out all;
+}
+::ng-deep .ng2-smart-th.status{
+  width:175px !important;
+}
+::ng-deep .statusclass{
+  text-align:center;
+
+}
+.crewAdd{
+  float: right;
+    padding: 0px 10px;
+    background-color: #274bdb;
+    border-color: #274bdb;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.crewHeading{
+  display: inline-block;
+  position: relative;
+  top: 11px;
+}
+
+::ng-deep  .switch-small{
+  background-color: green  !important;
+}
+::ng-deep .checked{
+  background-color: red  !important;
+}

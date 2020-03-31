@@ -1,0 +1,18 @@
+node {
+  
+     stage ('Checkout SCM'){
+     git 'git@bitbucket.org:amt/grammi-web-ui.git'
+    }     
+     stage ('Docker build'){
+     docker.build('grammi-web-ui:dev-$JOB_NAME')
+    }
+    stage ('Docker push'){
+    docker.withRegistry(credentialsId: 'ecr:us-east-2:aws-ecr', url: 'https://443817220012.dkr.ecr.us-east-2.amazonaws.com/grammi-web-ui') {
+    docker.image('grammi-web-ui:dev-$JOB_NAME').push('dev-$JOB_NAME')
+     }
+    }
+    
+    stage ('Clone devops-dev '){
+        git 'git@bitbucket.org:amt/grammi-devops-dev.git'
+     }
+}

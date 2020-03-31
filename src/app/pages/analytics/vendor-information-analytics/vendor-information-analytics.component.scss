@@ -1,0 +1,38 @@
+rect.65.Over.Years.and{
+    fill:#98abc5;
+   }
+   rect.45.to.64.Years{
+       fill:#8a89a6;
+   }
+   rect.25.to.44.Years{
+       fill:#7b6888;
+   }
+   rect.18.to.24.Years{
+       fill:#6b486b;
+   }
+   rect.14.to.17.Years{
+       fill:#a05d56;
+   }
+   rect.5.to.13.Years{
+       fill:#d0743c;
+   }
+   rect.Under.5.Years{
+       fill:#ff8c00;
+   }
+
+   ::ng-deep .ranges {
+    float: right !important;
+    margin-top: 30px !important;
+}
+
+.md-drppicker.drops-down-auto.ltr.shown.double.show-ranges {
+    width: 100% !important;
+}
+
+::ng-deep .ui-dropdown label.ui-dropdown-label {
+    max-width: 173px !important;
+}
+
+button.btn {
+    margin-top: 5px;
+}
